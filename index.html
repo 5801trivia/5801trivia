@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🐢</text></svg>">
+<title>5801 Trivia — Tuesday Night Scores &amp; Stats</title>
+<meta name="description" content="Scores, standings, trends and turtle race results from Tuesday trivia at 5801 Video Lounge, Pittsburgh.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  color-scheme: dark;
+  --page: #0f0d11;
+  --surface-1: #17141a;
+  --surface-2: #1e1a23;
+  --ink-1: #f3ede3;
+  --ink-2: #b9b0a1;
+  --ink-muted: #857d70;
+  --grid: #262130;
+  --baseline: #37303f;
+  --border: rgba(243, 237, 227, 0.08);
+  --series-1: #d9b36c;
+  --gold: #d9b36c;
+  --gold-bright: #ecc987;
+  --silver: #b5b0a8;
+  --bronze: #c08a5a;
+  --plum: #b57fa8;
+  --accent-wash: rgba(217, 179, 108, 0.10);
+  --good-text: #8fc79a;
+  --bad-text: #dd7d7d;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #f5f0e7;
+  --surface-1: #fdfaf4;
+  --surface-2: #f2ecdf;
+  --ink-1: #211c17;
+  --ink-2: #5c554a;
+  --ink-muted: #8b8172;
+  --grid: #e3dccd;
+  --baseline: #cdc5b2;
+  --border: rgba(33, 28, 23, 0.10);
+  --series-1: #9c742f;
+  --gold: #9c742f;
+  --gold-bright: #7d5a1f;
+  --silver: #77716a;
+  --bronze: #8f5f36;
+  --plum: #8d5680;
+  --accent-wash: rgba(156, 116, 47, 0.10);
+  --good-text: #2e7d43;
+  --bad-text: #b04a4a;
+}
+* { box-sizing: border-box; }
+html { background: var(--page); }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--page);
+  color: var(--ink-1);
+  line-height: 1.5;
+  font-size: 15px;
+}
+a { color: var(--gold); }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px 72px; }
+header.site {
+  padding: 40px 0 20px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 40px; font-weight: 600; letter-spacing: 0.5px;
+  font-variation-settings: "opsz" 100;
+}
+.logo .fifty { color: var(--gold); font-style: italic; }
+.tagline {
+  color: var(--ink-muted); font-size: 12.5px;
+  text-transform: uppercase; letter-spacing: 2.2px;
+}
+.spectrum {
+  height: 2px; border: none; margin: 0 0 6px;
+  background: linear-gradient(90deg, #a85b5b, #b98a4e, #b9a94e, #6f9c78, #5f7fa8, #8a6da0);
+  opacity: 0.85;
+}
+.theme-btn {
+  margin-left: auto; border: 1px solid var(--border); background: none;
+  color: var(--ink-2); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+  font-size: 11.5px; font-family: var(--sans); text-transform: uppercase; letter-spacing: 1.5px;
+}
+.theme-btn:hover { color: var(--ink-1); border-color: var(--gold); }
+nav.tabs {
+  position: sticky; top: 0; z-index: 30; background: var(--page);
+  display: flex; gap: 26px; overflow-x: auto;
+  padding: 14px 0 0; border-bottom: 1px solid var(--grid); margin-bottom: 28px;
+}
+nav.tabs button {
+  border: none; background: none; color: var(--ink-muted);
+  font-family: var(--sans); font-size: 12.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.8px;
+  padding: 6px 2px 12px; cursor: pointer; white-space: nowrap;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+nav.tabs button:hover { color: var(--ink-1); }
+nav.tabs button.active { color: var(--gold); border-bottom-color: var(--gold); }
+section.view { display: none; }
+section.view.active { display: block; }
+h2 {
+  font-family: var(--serif); font-size: 26px; font-weight: 550;
+  margin: 40px 0 14px; letter-spacing: 0.2px;
+}
+h3 {
+  font-family: var(--sans); font-size: 11.5px; font-weight: 650;
+  text-transform: uppercase; letter-spacing: 1.8px;
+  margin: 0 0 10px; color: var(--ink-2);
+}
+.sub { color: var(--ink-muted); font-size: 13px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tile {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px 18px 14px;
+}
+.tile .label {
+  font-size: 10.5px; color: var(--ink-muted);
+  text-transform: uppercase; letter-spacing: 1.6px; font-weight: 600;
+}
+.tile .value {
+  font-family: var(--serif); font-size: 32px; font-weight: 550;
+  margin-top: 6px; color: var(--ink-1); line-height: 1.1;
+}
+.tile .note { font-size: 12px; color: var(--ink-muted); margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+  padding: 20px; margin-top: 14px;
+}
+.cards2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+@media (max-width: 760px) { .cards2 { grid-template-columns: 1fr; } }
+.cards3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; align-items: start; }
+.chart-head { display: flex; align-items: baseline; gap: 10px; }
+.chart-head .table-toggle {
+  margin-left: auto; font-size: 10.5px; border: 1px solid var(--border);
+  background: none; color: var(--ink-muted); border-radius: 999px; padding: 3px 12px;
+  cursor: pointer; text-transform: uppercase; letter-spacing: 1.2px;
+}
+.chart-head .table-toggle:hover { color: var(--gold); border-color: var(--gold); }
+figure.chart { margin: 10px 0 0; position: relative; }
+figure.chart svg { display: block; width: 100%; height: auto; }
+.tooltip {
+  position: absolute; pointer-events: none; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 11px;
+  font-size: 12.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.4); display: none; z-index: 20;
+  min-width: 130px;
+}
+.tooltip .t-title { color: var(--ink-muted); font-size: 11px; margin-bottom: 3px; }
+.tooltip .t-row { display: flex; align-items: center; gap: 6px; }
+.tooltip .t-key { width: 12px; height: 0; border-top: 2px solid var(--series-1); }
+.tooltip .t-val { font-weight: 700; }
+.tooltip .t-lab { color: var(--ink-2); }
+table.data { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-top: 4px; }
+table.data th {
+  text-align: left; color: var(--ink-muted); font-weight: 600; font-size: 10.5px;
+  text-transform: uppercase; letter-spacing: 1.3px;
+  border-bottom: 1px solid var(--grid); padding: 7px 9px; white-space: nowrap;
+}
+table.data td { padding: 8px 9px; border-bottom: 1px solid var(--grid); }
+table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.data tr:last-child td { border-bottom: none; }
+table.data tr.champ td { font-weight: 650; color: var(--gold-bright); }
+td.rank { font-variant-numeric: tabular-nums; color: var(--ink-muted); width: 30px; }
+.rank-1 { color: var(--gold-bright); font-weight: 700; }
+.rank-2 { color: var(--silver); font-weight: 700; }
+.rank-3 { color: var(--bronze); font-weight: 700; }
+.badge {
+  display: inline-block; font-size: 10px; font-weight: 650; border-radius: 999px;
+  padding: 2px 9px; margin-left: 6px;
+  border: 1px solid var(--gold); color: var(--gold); background: none;
+  text-transform: uppercase; letter-spacing: 1px; vertical-align: 1px;
+}
+.badge.gray { border-color: var(--baseline); color: var(--ink-muted); }
+.badge.gold { border-color: var(--plum); color: var(--plum); }
+.diff-Softball { color: var(--good-text); font-weight: 650; }
+.diff-Mild { color: var(--ink-2); font-weight: 650; }
+.diff-Standard { color: var(--gold); font-weight: 650; }
+.diff-Tough { color: var(--bronze); font-weight: 650; }
+.diff-Brutal { color: var(--bad-text); font-weight: 650; }
+.turtle-hero { display: flex; align-items: center; gap: 18px; }
+.turtle-num {
+  font-family: var(--serif); font-size: 48px; font-weight: 550; font-style: italic;
+  color: var(--gold-bright);
+  border: 1px solid var(--border); background: var(--accent-wash);
+  border-radius: 12px; padding: 2px 22px 6px;
+}
+select.picker {
+  font-size: 14px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-1); color: var(--ink-1); max-width: 100%; font-family: var(--sans);
+}
+.filter-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 6px 0 14px; }
+.aka-btn {
+  color: var(--gold); font-size: 10.5px; margin-left: 8px; cursor: pointer;
+  border: 1px solid var(--border); background: none; border-radius: 999px; padding: 1px 9px;
+  text-transform: uppercase; letter-spacing: 0.8px;
+}
+.aka-btn:hover { border-color: var(--gold); }
+.aka-list { color: var(--ink-muted); font-size: 12.5px; margin-top: 5px; padding-left: 12px;
+  border-left: 2px solid var(--grid); }
+.pctbar { display: inline-block; width: 90px; height: 5px; background: var(--grid); border-radius: 3px; vertical-align: middle; margin-right: 6px; }
+.pctbar i { display: block; height: 100%; border-radius: 3px; background: var(--series-1); }
+.hidden { display: none !important; }
+footer { margin-top: 48px; color: var(--ink-muted); font-size: 12px; border-top: 1px solid var(--grid); padding-top: 16px; letter-spacing: 0.3px; }
+.empty { color: var(--ink-muted); font-style: italic; padding: 14px 0; }
+button.team-link {
+  background: none; border: none; padding: 0; margin: 0; cursor: pointer;
+  font: inherit; color: inherit; text-align: left;
+  border-bottom: 1px dotted var(--baseline);
+}
+button.team-link:hover { color: var(--gold); border-bottom-color: var(--gold); }
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(8,6,10,0.72); z-index: 90;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 5vh 16px; overflow-y: auto;
+}
+.modal {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 14px;
+  max-width: 680px; width: 100%; padding: 26px 26px 22px; position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.modal .close-btn {
+  position: absolute; top: 14px; right: 14px; border: 1px solid var(--border);
+  background: none; color: var(--ink-muted); border-radius: 999px;
+  width: 30px; height: 30px; cursor: pointer; font-size: 14px; line-height: 1;
+}
+.modal .close-btn:hover { color: var(--ink-1); border-color: var(--gold); }
+.modal h2 { margin: 0 0 2px; font-size: 28px; }
+.modal .kpis { margin-top: 16px; }
+.facts { margin-top: 16px; font-size: 13.5px; }
+.facts .fact { display: flex; justify-content: space-between; gap: 14px;
+  padding: 7px 0; border-bottom: 1px solid var(--grid); }
+.facts .fact:last-child { border-bottom: none; }
+.facts .fact .fl { color: var(--ink-muted); }
+.facts .fact .fv { text-align: right; }
+.honors { margin-top: 16px; }
+.honors .badge { margin: 0 6px 6px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="logo"><span class="fifty">5801</span> Trivia</div>
+    <div class="tagline">Tuesdays · 5801 Video Lounge &amp; Café · Pittsburgh</div>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light mode">Lights</button>
+  </header>
+  <hr class="spectrum" aria-hidden="true">
+
+  <nav class="tabs" id="tabs" role="tablist">
+    <button data-view="overview" class="active">Overview</button>
+    <button data-view="nights">Nights</button>
+    <button data-view="teams">Teams</button>
+    <button data-view="turtle">Turtle Race</button>
+  </nav>
+
+  <section class="view active" id="view-overview"></section>
+  <section class="view" id="view-nights"></section>
+  <section class="view" id="view-teams"></section>
+  <section class="view" id="view-turtle"></section>
+
+  <footer id="foot"></footer>
+</div>
+<script>
+'use strict';
+/* ---------- theme ---------- */
+const themeBtn = document.getElementById('themeBtn');
+themeBtn.addEventListener('click', () => {
+  const cur = document.documentElement.dataset.theme || 'dark';
+  document.documentElement.dataset.theme = cur === 'dark' ? 'light' : 'dark';
+  render();  // re-render so SVG colors pick up new tokens
+});
+
+/* ---------- helpers ---------- */
+const $ = sel => document.querySelector(sel);
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const fmtDate = iso => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US',
+    { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+};
+const shortDate = iso => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' });
+};
+const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const difficulty = pct => pct == null ? null : pct >= 76 ? 'Softball' : pct >= 73 ? 'Mild' : pct >= 69 ? 'Standard' : pct >= 66 ? 'Tough' : 'Brutal';
+
+/* ---------- generic svg line chart with crosshair tooltip + table twin ---------- */
+function lineChart(parent, { title, subtitle, points, yLabel, fmt = v => String(v), tableCols }) {
+  // points: [{x: isoDate, y: value}]
+  const card = el('div', 'card');
+  const head = el('div', 'chart-head');
+  head.appendChild(el('h3', null, title));
+  const toggle = el('button', 'table-toggle', 'Table');
+  head.appendChild(toggle);
+  card.appendChild(head);
+  if (subtitle) card.appendChild(el('div', 'sub', subtitle));
+
+  const fig = el('figure', 'chart');
+  const W = 640, H = 240, padL = 42, padR = 16, padT = 14, padB = 30;
+  const xs = points.map((_, i) => padL + (points.length === 1 ? (W - padL - padR) / 2
+    : i * (W - padL - padR) / (points.length - 1)));
+  const ys = points.map(p => p.y);
+  const yMax = Math.max(...ys, 1), yMin = 0;
+  const niceMax = Math.ceil(yMax / 10) * 10 || 10;
+  const Y = v => padT + (H - padT - padB) * (1 - (v - yMin) / (niceMax - yMin));
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('role', 'img');
+  svg.setAttribute('aria-label', title);
+
+  // gridlines: hairline solid
+  const gridColor = cssVar('--grid'), mut = cssVar('--ink-muted');
+  const steps = 4;
+  for (let i = 0; i <= steps; i++) {
+    const v = yMin + (niceMax - yMin) * i / steps;
+    const y = Y(v);
+    const ln = document.createElementNS(NS, 'line');
+    ln.setAttribute('x1', padL); ln.setAttribute('x2', W - padR);
+    ln.setAttribute('y1', y); ln.setAttribute('y2', y);
+    ln.setAttribute('stroke', i === 0 ? cssVar('--baseline') : gridColor);
+    ln.setAttribute('stroke-width', '1');
+    svg.appendChild(ln);
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', padL - 8); t.setAttribute('y', y + 4);
+    t.setAttribute('text-anchor', 'end'); t.setAttribute('font-size', '11');
+    t.setAttribute('fill', mut);
+    t.textContent = fmt(Math.round(v));
+    svg.appendChild(t);
+  }
+  // x labels: first, last, and up to 3 between
+  const labIdx = new Set([0, points.length - 1]);
+  if (points.length > 4) { labIdx.add(Math.floor(points.length / 2)); }
+  labIdx.forEach(i => {
+    if (i < 0 || points[i] === undefined) return;
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', xs[i]); t.setAttribute('y', H - 8);
+    t.setAttribute('text-anchor', i === 0 ? 'start' : i === points.length - 1 ? 'end' : 'middle');
+    t.setAttribute('font-size', '11'); t.setAttribute('fill', mut);
+    t.textContent = shortDate(points[i].x);
+    svg.appendChild(t);
+  });
+
+  const c1 = cssVar('--series-1');
+  if (points.length > 1) {
+    const path = document.createElementNS(NS, 'path');
+    path.setAttribute('d', points.map((p, i) => `${i ? 'L' : 'M'}${xs[i]},${Y(p.y)}`).join(''));
+    path.setAttribute('fill', 'none'); path.setAttribute('stroke', c1);
+    path.setAttribute('stroke-width', '2'); path.setAttribute('stroke-linejoin', 'round');
+    path.setAttribute('stroke-linecap', 'round');
+    svg.appendChild(path);
+  }
+  // markers with surface ring
+  points.forEach((p, i) => {
+    const ring = document.createElementNS(NS, 'circle');
+    ring.setAttribute('cx', xs[i]); ring.setAttribute('cy', Y(p.y));
+    ring.setAttribute('r', '6'); ring.setAttribute('fill', cssVar('--surface-1'));
+    svg.appendChild(ring);
+    const dot = document.createElementNS(NS, 'circle');
+    dot.setAttribute('cx', xs[i]); dot.setAttribute('cy', Y(p.y));
+    dot.setAttribute('r', '4'); dot.setAttribute('fill', c1);
+    svg.appendChild(dot);
+  });
+  // endpoint direct label
+  const lastP = points[points.length - 1];
+  if (lastP) {
+    const t = document.createElementNS(NS, 'text');
+    t.setAttribute('x', Math.min(xs[xs.length - 1] + 8, W - 2));
+    t.setAttribute('y', Y(lastP.y) - 8);
+    t.setAttribute('text-anchor', 'end');
+    t.setAttribute('font-size', '12'); t.setAttribute('font-weight', '700');
+    t.setAttribute('fill', cssVar('--ink-1'));
+    t.textContent = fmt(lastP.y);
+    svg.appendChild(t);
+  }
+  // crosshair
+  const cross = document.createElementNS(NS, 'line');
+  cross.setAttribute('y1', padT); cross.setAttribute('y2', H - padB);
+  cross.setAttribute('stroke', cssVar('--baseline')); cross.setAttribute('stroke-width', '1');
+  cross.style.display = 'none';
+  svg.appendChild(cross);
+
+  fig.appendChild(svg);
+  const tip = el('div', 'tooltip');
+  fig.appendChild(tip);
+  card.appendChild(fig);
+
+  svg.addEventListener('pointermove', e => {
+    const rect = svg.getBoundingClientRect();
+    const px = (e.clientX - rect.left) / rect.width * W;
+    let best = 0, bd = Infinity;
+    xs.forEach((x, i) => { const d = Math.abs(x - px); if (d < bd) { bd = d; best = i; } });
+    cross.setAttribute('x1', xs[best]); cross.setAttribute('x2', xs[best]);
+    cross.style.display = '';
+    tip.style.display = 'block';
+    tip.replaceChildren();
+    tip.appendChild(el('div', 't-title', fmtDate(points[best].x)));
+    const row = el('div', 't-row');
+    row.appendChild(el('i', 't-key'));
+    row.appendChild(el('span', 't-val', fmt(points[best].y)));
+    row.appendChild(el('span', 't-lab', yLabel));
+    tip.appendChild(row);
+    const left = xs[best] / W * rect.width;
+    tip.style.left = Math.min(left + 12, rect.width - 150) + 'px';
+    tip.style.top = (Y(points[best].y) / H * rect.height - 10) + 'px';
+  });
+  svg.addEventListener('pointerleave', () => { tip.style.display = 'none'; cross.style.display = 'none'; });
+
+  // table twin
+  const tbl = el('table', 'data hidden');
+  const thead = el('thead'); const trh = el('tr');
+  (tableCols || ['Night', yLabel]).forEach((c, i) => trh.appendChild(el('th', i ? 'num' : null, c)));
+  thead.appendChild(trh); tbl.appendChild(thead);
+  const tb = el('tbody');
+  points.forEach(p => {
+    const tr = el('tr');
+    tr.appendChild(el('td', null, fmtDate(p.x)));
+    tr.appendChild(el('td', 'num', fmt(p.y)));
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  card.appendChild(tbl);
+  toggle.addEventListener('click', () => {
+    const showing = !tbl.classList.contains('hidden');
+    tbl.classList.toggle('hidden', showing);
+    fig.classList.toggle('hidden', !showing);
+    toggle.textContent = showing ? 'Table' : 'Chart';
+  });
+  parent.appendChild(card);
+}
+
+/* ---------- horizontal bar chart (single series) with hover + table twin ---------- */
+function barChart(parent, { title, bars, valueLabel, fmt = v => String(v) }) {
+  // bars: [{label, value, note}]
+  const card = el('div', 'card');
+  const head = el('div', 'chart-head');
+  head.appendChild(el('h3', null, title));
+  const toggle = el('button', 'table-toggle', 'Table');
+  head.appendChild(toggle);
+  card.appendChild(head);
+
+  const fig = el('figure', 'chart');
+  const W = 640, rowH = 34, padL = 110, padR = 60, padT = 6, padB = 6;
+  const H = padT + padB + bars.length * rowH;
+  const vMax = Math.max(...bars.map(b => b.value), 1);
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', title);
+  const c1 = cssVar('--series-1');
+  const tip = el('div', 'tooltip');
+
+  bars.forEach((b, i) => {
+    const y = padT + i * rowH + (rowH - 22) / 2;
+    const w = Math.max((W - padL - padR) * b.value / vMax, 2);
+    const lab = document.createElementNS(NS, 'text');
+    lab.setAttribute('x', padL - 8); lab.setAttribute('y', y + 15);
+    lab.setAttribute('text-anchor', 'end'); lab.setAttribute('font-size', '12.5');
+    lab.setAttribute('fill', cssVar('--ink-2'));
+    lab.textContent = b.label;
+    svg.appendChild(lab);
+    const r = document.createElementNS(NS, 'path');
+    // square at baseline (left), 4px rounded data end (right)
+    const x0 = padL, x1 = padL + w, yTop = y, yBot = y + 22, rr = Math.min(4, w);
+    r.setAttribute('d', `M${x0},${yTop} L${x1 - rr},${yTop} Q${x1},${yTop} ${x1},${yTop + rr}
+      L${x1},${yBot - rr} Q${x1},${yBot} ${x1 - rr},${yBot} L${x0},${yBot} Z`);
+    r.setAttribute('fill', c1);
+    svg.appendChild(r);
+    const val = document.createElementNS(NS, 'text');
+    val.setAttribute('x', x1 + 8); val.setAttribute('y', y + 15);
+    val.setAttribute('font-size', '12'); val.setAttribute('font-weight', '700');
+    val.setAttribute('fill', cssVar('--ink-1'));
+    val.textContent = fmt(b.value);
+    svg.appendChild(val);
+    // big transparent hit target
+    const hit = document.createElementNS(NS, 'rect');
+    hit.setAttribute('x', 0); hit.setAttribute('y', padT + i * rowH);
+    hit.setAttribute('width', W); hit.setAttribute('height', rowH);
+    hit.setAttribute('fill', 'transparent');
+    hit.addEventListener('pointermove', e => {
+      r.setAttribute('opacity', '0.82');
+      const rect = svg.getBoundingClientRect();
+      tip.style.display = 'block';
+      tip.replaceChildren();
+      tip.appendChild(el('div', 't-title', b.label));
+      const row = el('div', 't-row');
+      row.appendChild(el('i', 't-key'));
+      row.appendChild(el('span', 't-val', fmt(b.value)));
+      row.appendChild(el('span', 't-lab', valueLabel));
+      tip.appendChild(row);
+      if (b.note) tip.appendChild(el('div', 't-title', b.note));
+      tip.style.left = Math.min((e.clientX - rect.left) + 14, rect.width - 160) + 'px';
+      tip.style.top = ((padT + i * rowH) / H * rect.height - 6) + 'px';
+    });
+    hit.addEventListener('pointerleave', () => { r.removeAttribute('opacity'); tip.style.display = 'none'; });
+    svg.appendChild(hit);
+  });
+  fig.appendChild(svg);
+  fig.appendChild(tip);
+  card.appendChild(fig);
+
+  const tbl = el('table', 'data hidden');
+  const trh = el('tr');
+  trh.appendChild(el('th', null, ''));
+  trh.appendChild(el('th', 'num', valueLabel));
+  const th2 = el('thead'); th2.appendChild(trh); tbl.appendChild(th2);
+  const tb = el('tbody');
+  bars.forEach(b => {
+    const tr = el('tr');
+    tr.appendChild(el('td', null, b.label));
+    tr.appendChild(el('td', 'num', fmt(b.value)));
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  card.appendChild(tbl);
+  toggle.addEventListener('click', () => {
+    const showing = !tbl.classList.contains('hidden');
+    tbl.classList.toggle('hidden', showing);
+    fig.classList.toggle('hidden', !showing);
+    toggle.textContent = showing ? 'Table' : 'Chart';
+  });
+  parent.appendChild(card);
+}
+
+/* ---------- data + views ---------- */
+let DATA = null;
+const realNights = () => DATA.nights.filter(n => n.real);
+let CANON = {};
+function buildCanon() {
+  CANON = {};
+  DATA.teams_alltime.forEach(t => {
+    CANON[t.team] = t.team;
+    (t.aka || []).forEach(a => { CANON[a] = t.team; });
+  });
+}
+const canonOf = name => CANON[name] || name;
+let RANKS = null;
+function buildRanks() {
+  const nights = realNights();
+  const m = {};
+  DATA.teams_alltime.forEach(t => {
+    m[t.team] = { games: t.games, points: t.points, wins: t.wins, turtle: t.turtle_wins,
+                  mc: t.misscon, best: t.best, fastest: t.fastest || 0,
+                  top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0 };
+  });
+  const g = c => m[c] || (m[c] = { games: 0, points: 0, wins: 0, turtle: 0, mc: 0, best: 0,
+                                   fastest: 0, top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0 });
+  const att = {}, turt = {};
+  let curWinner = null, winRun = 0;
+  const allScores = [];
+  nights.forEach(n => {
+    const present = new Set(), t10 = new Set(), raceWinners = new Set();
+    const orderSeen = [];
+    n.standings.forEach((s, i) => {
+      const c = canonOf(s.team);
+      allScores.push(s.total);
+      if (!present.has(c)) orderSeen.push(c);
+      present.add(c);
+      if (i < 10) t10.add(c);
+      if (s.turtle_pts > 0) raceWinners.add(c);
+    });
+    t10.forEach(c => { g(c).top10 += 1; });
+    if (orderSeen[1]) g(orderSeen[1]).p2 += 1;
+    if (orderSeen[2]) g(orderSeen[2]).p3 += 1;
+    // attendance runs
+    Object.keys(att).forEach(c => { if (!present.has(c)) delete att[c]; });
+    present.forEach(c => {
+      att[c] = (att[c] || 0) + 1;
+      if (att[c] > g(c).attRun) g(c).attRun = att[c];
+    });
+    // win streaks
+    const w = n.standings.length ? canonOf(n.standings[0].team) : null;
+    winRun = (w && w === curWinner) ? winRun + 1 : 1;
+    curWinner = w;
+    if (w && winRun > g(w).winRun) g(w).winRun = winRun;
+    // turtle streaks (only nights with a race)
+    if (n.turtle) {
+      Object.keys(turt).forEach(c => { if (!raceWinners.has(c)) delete turt[c]; });
+      raceWinners.forEach(c => {
+        turt[c] = (turt[c] || 0) + 1;
+        if (turt[c] > g(c).turtRun) g(c).turtRun = turt[c];
+      });
+    }
+  });
+  allScores.sort((a, b) => b - a);
+  const cols = {};
+  ['games', 'points', 'wins', 'turtle', 'mc', 'fastest', 'top10', 'p2', 'p3', 'attRun', 'winRun', 'turtRun'].forEach(k => {
+    cols[k] = Object.values(m).map(x => x[k]).sort((a, b) => b - a);
+  });
+  RANKS = { m, cols, allScores, total: Object.keys(m).length };
+}
+function rankOf(value, sortedDesc) {
+  // standard competition ranking: 1 + number of strictly greater values
+  let lo = 0, hi = sortedDesc.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (sortedDesc[mid] > value) lo = mid + 1; else hi = mid; }
+  return lo + 1;
+}
+function teamLink(name) {
+  const b = el('button', 'team-link', name);
+  b.addEventListener('click', () => openTeamModal(canonOf(name)));
+  return b;
+}
+
+/* ---------- team profile modal ---------- */
+function openTeamModal(canon) {
+  const t = DATA.teams_alltime.find(x => x.team === canon);
+  const nights = realNights();
+  const apps = [];
+  nights.forEach(n => {
+    n.standings.forEach((s, i) => {
+      if (canonOf(s.team) === canon) {
+        apps.push({ date: n.date, name: s.team, rank: i + 1, score: s.total,
+                    of: n.standings.length, turtle: s.turtle_pts > 0, mc: s.misscon_correct,
+                    won: i === 0 });
+      }
+    });
+  });
+  if (!apps.length) return;
+  // one entry per night (name variants can merge onto the same night)
+  const byDate = new Map();
+  apps.forEach(a => {
+    const cur = byDate.get(a.date);
+    if (!cur || a.rank < cur.rank) byDate.set(a.date, { ...a, turtle: a.turtle || (cur && cur.turtle), mc: a.mc || (cur && cur.mc) });
+    else { cur.turtle = cur.turtle || a.turtle; cur.mc = cur.mc || a.mc; }
+  });
+  apps.length = 0;
+  [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date)).forEach(a => apps.push(a));
+  const overlay = el('div', 'modal-overlay');
+  const box = el('div', 'modal');
+  const close = el('button', 'close-btn', '\u2715');
+  close.setAttribute('aria-label', 'Close');
+  box.appendChild(close);
+  box.appendChild(el('h2', null, canon));
+  const games = t ? t.games : apps.length;
+  const wins = t ? t.wins : apps.filter(a => a.won).length;
+  const best = apps.reduce((a, b) => b.score > a.score ? b : a);
+  const bestFin = apps.reduce((a, b) => b.rank < a.rank ? b : a);
+  box.appendChild(el('div', 'sub', 'first played ' + fmtDate(apps[0].date) +
+    ' · last seen ' + fmtDate(apps[apps.length - 1].date)));
+
+  const k = el('div', 'kpis');
+  k.appendChild(tile('Nights', games));
+  k.appendChild(tile('Wins', wins));
+  k.appendChild(tile('Best score', best.score, shortDate(best.date)));
+  k.appendChild(tile('Best finish', bestFin.rank === 1 ? '1st' :
+    bestFin.rank === 2 ? '2nd' : bestFin.rank === 3 ? '3rd' : bestFin.rank + 'th', shortDate(bestFin.date)));
+  box.appendChild(k);
+
+  // score history chart
+  if (apps.length > 2) {
+    const holder = el('div');
+    lineChart(holder, {
+      title: 'Score by night',
+      points: apps.map(a => ({ x: a.date, y: a.score })),
+      yLabel: 'points', tableCols: ['Night', 'Score'],
+    });
+    box.appendChild(holder);
+  }
+
+  // facts
+  const facts = el('div', 'facts');
+  const fact = (l, v) => {
+    const f = el('div', 'fact');
+    f.appendChild(el('span', 'fl', l));
+    f.appendChild(el('span', 'fv', String(v)));
+    facts.appendChild(f);
+  };
+  const avgScore = Math.round(apps.reduce((s, a) => s + a.score, 0) / apps.length);
+  const avgRank = (apps.reduce((s, a) => s + a.rank, 0) / apps.length).toFixed(1);
+  const top10s = apps.filter(a => a.rank <= 10).length;
+  // longest attendance run over consecutive recorded nights
+  const idx = new Map(nights.map((n, i) => [n.date, i]));
+  let bestRun = 0, bestSpan = null, cur = 0, curStart = null, prev = -2;
+  apps.forEach(a => {
+    const i = idx.get(a.date);
+    if (i === prev + 1) { cur += 1; } else { cur = 1; curStart = a.date; }
+    if (cur > bestRun) { bestRun = cur; bestSpan = [curStart, a.date]; }
+    prev = i;
+  });
+  fact('Average score', avgScore);
+  fact('Average finish', avgRank + ' of ' + Math.round(nights.reduce((s, n) => s + n.teams, 0) / nights.length));
+  fact('Top-10 finishes', top10s + ' of ' + apps.length + ' nights');
+  fact('Turtle race wins', t ? t.turtle_wins : apps.filter(a => a.turtle).length);
+  if (t && t.fastest) fact('Speed bonuses won (fastest correct answer)', t.fastest + ' \u00d7 2 pts');
+  fact('Miss Congeniality wins', t ? t.misscon : apps.filter(a => a.mc).length);
+  if (bestRun > 1 && bestSpan) fact('Longest attendance run', bestRun + ' straight nights (' +
+    shortDate(bestSpan[0]) + ' \u2192 ' + shortDate(bestSpan[1]) + ')');
+  fact('Total points, all-time', (t ? t.points : apps.reduce((s, a) => s + a.score, 0)).toLocaleString());
+  box.appendChild(facts);
+
+  // all-time rankings — every category, every team
+  if (!RANKS) buildRanks();
+  const me = RANKS.m[canon];
+  if (me) {
+    const rk = el('div', 'facts');
+    const hdr = el('h3', null, 'All-time rankings');
+    hdr.style.marginTop = '18px';
+    box.appendChild(hdr);
+    box.appendChild(el('div', 'sub', 'among ' + RANKS.total.toLocaleString() + ' teams in the books'));
+    const row = (label, rank, detail) => {
+      const f = el('div', 'fact');
+      f.appendChild(el('span', 'fl', label));
+      const v = el('span', 'fv', '#' + rank + (detail ? ' \u00b7 ' + detail : ''));
+      if (rank <= 10) { v.style.color = 'var(--gold-bright)'; v.style.fontWeight = '700'; }
+      rk.appendChild(f);
+      f.appendChild(v);
+    };
+    row('Highest single-night score', rankOf(me.best, RANKS.allScores), me.best + ' pts');
+    row('Most nights played', rankOf(me.games, RANKS.cols.games), me.games + ' nights');
+    row('Most wins', rankOf(me.wins, RANKS.cols.wins), me.wins + (me.wins === 1 ? ' win' : ' wins'));
+    row('Most total points', rankOf(me.points, RANKS.cols.points), me.points.toLocaleString() + ' pts');
+    row('Most top-10 finishes', rankOf(me.top10, RANKS.cols.top10), me.top10 + ' finishes');
+    if (me.p2 > 0) row('2nd-place finishes', rankOf(me.p2, RANKS.cols.p2), me.p2 + '\u00d7');
+    if (me.p3 > 0) row('3rd-place finishes', rankOf(me.p3, RANKS.cols.p3), me.p3 + '\u00d7');
+    row('Turtle race wins', rankOf(me.turtle, RANKS.cols.turtle), me.turtle + ' \u{1F422}');
+    if (me.fastest > 0) row('Speed bonuses won', rankOf(me.fastest, RANKS.cols.fastest), me.fastest + ' fastest answers');
+    row('Miss Congeniality wins', rankOf(me.mc, RANKS.cols.mc), me.mc + ' crowns');
+    row('Longest attendance streak', rankOf(me.attRun, RANKS.cols.attRun), me.attRun + ' straight');
+    if (me.winRun > 0) row('Longest win streak', rankOf(me.winRun, RANKS.cols.winRun), me.winRun + ' in a row');
+    if (me.turtRun > 0) row('Longest turtle-race streak', rankOf(me.turtRun, RANKS.cols.turtRun), me.turtRun + ' in a row');
+    box.appendChild(rk);
+  }
+  if (t && t.aka && t.aka.length) {
+    const ak = el('div', 'honors');
+    ak.appendChild(el('h3', null, 'Also played as'));
+    ak.appendChild(el('div', 'sub', t.aka.join(' \u00b7 ')));
+    box.appendChild(ak);
+  }
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+  const kill = () => { overlay.remove(); document.removeEventListener('keydown', esc); };
+  const esc = e => { if (e.key === 'Escape') kill(); };
+  close.addEventListener('click', kill);
+  overlay.addEventListener('click', e => { if (e.target === overlay) kill(); });
+  document.addEventListener('keydown', esc);
+}
+
+function tile(label, value, note) {
+  const t = el('div', 'tile');
+  t.appendChild(el('div', 'label', label));
+  t.appendChild(el('div', 'value', value == null ? '—' : String(value)));
+  if (note) t.appendChild(el('div', 'note', note));
+  return t;
+}
+
+function recordCard(title, rows, linkTeams) {
+  // rows: [{a, b, c}] -> rank, main, right value (+ optional sub)
+  const card = el('div', 'card');
+  card.appendChild(el('h3', null, title));
+  const tbl = el('table', 'data');
+  const tb = el('tbody');
+  rows.forEach((r, i) => {
+    const tr = el('tr');
+    const rank = el('td', 'rank' + (i < 3 ? ' rank-' + (i + 1) : ''), String(i + 1));
+    tr.appendChild(rank);
+    const mid = el('td');
+    mid.appendChild(linkTeams ? teamLink(r.a) : document.createTextNode(r.a));
+    if (r.sub) mid.appendChild(el('div', 'sub', r.sub));
+    tr.appendChild(mid);
+    tr.appendChild(el('td', 'num', String(r.b)));
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  card.appendChild(tbl);
+  return card;
+}
+
+function standingsTable(night, limit) {
+  const tbl = el('table', 'data');
+  const thead = el('thead'); const trh = el('tr');
+  ['#', 'Team', 'Score'].forEach((c, i) => trh.appendChild(el('th', i === 2 ? 'num' : null, c)));
+  thead.appendChild(trh); tbl.appendChild(thead);
+  const tb = el('tbody');
+  const rows = limit ? night.standings.slice(0, limit) : night.standings;
+  rows.forEach((t, i) => {
+    const tr = el('tr', i === 0 ? 'champ' : null);
+    const rank = el('td', 'rank' + (i < 3 ? ' rank-' + (i + 1) : ''), String(i + 1));
+    tr.appendChild(rank);
+    const nameTd = el('td');
+    nameTd.appendChild(teamLink(t.team));
+    if (t.turtle_pts > 0) nameTd.appendChild(el('span', 'badge', 'race win'));
+    if (t.misscon_correct) nameTd.appendChild(el('span', 'badge gold', 'MC'));
+    tr.appendChild(nameTd);
+    tr.appendChild(el('td', 'num', String(t.total)));
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  return tbl;
+}
+
+function turtleCard(night) {
+  const c = el('div', 'card');
+  c.appendChild(el('h3', null, '\u{1F422} Halftime Turtle Race'));
+  if (!night || !night.turtle) {
+    c.appendChild(el('div', 'empty', 'No turtle race recorded for this night.'));
+    return c;
+  }
+  const t = night.turtle;
+  const hero = el('div', 'turtle-hero');
+  hero.appendChild(el('div', 'turtle-num', '#' + t.winning_turtle));
+  const info = el('div');
+  info.appendChild(el('div', null, `Turtle #${t.winning_turtle} took the crown.`));
+  if (t.total_picks) {
+    info.appendChild(el('div', 'sub', `${t.correct_picks} of ${t.total_picks} teams backed the winner.`));
+  }
+  if (t.winning_teams && t.winning_teams.length) {
+    info.appendChild(el('div', 'sub', 'Winning bets: ' + t.winning_teams.join(', ')));
+  }
+  hero.appendChild(info);
+  c.appendChild(hero);
+  return c;
+}
+
+function missconCard(night) {
+  const c = el('div', 'card');
+  c.appendChild(el('h3', null, 'Miss Congeniality'));
+  if (!night || !night.miss_congeniality) {
+    c.appendChild(el('div', 'empty', 'No Miss Congeniality question recorded for this night.'));
+    return c;
+  }
+  const m = night.miss_congeniality;
+  if (m.q) c.appendChild(el('div', null, m.q));
+  if (m.answer) c.appendChild(el('div', 'sub', 'Answer: ' + m.answer));
+  if (m.correct_teams && m.correct_teams.length) {
+    let line = m.correct_teams.join(', ');
+    if (m.closest_guess != null && m.off != null) {
+      line += ' — guessed ' + m.closest_guess + ', off by ' + m.off;
+    } else if (m.closest_guess != null) {
+      line += ' — guessed ' + m.closest_guess;
+    }
+    c.appendChild(el('div', null, '\u{1F451} ' + line));
+  } else {
+    c.appendChild(el('div', 'empty', 'Recorded, but no closest team logged.'));
+  }
+  return c;
+}
+
+/* ---------- overview ---------- */
+function renderOverview() {
+  const v = $('#view-overview');
+  v.replaceChildren();
+  const nights = realNights();
+  if (!nights.length) { v.appendChild(el('div', 'empty', 'No game nights yet — check back after Tuesday!')); return; }
+  const latest = nights[nights.length - 1];
+  const allHigh = nights.reduce((a, n) => n.high_score > (a.high_score || 0) ? n : a, {});
+  const maxTeams = nights.reduce((a, n) => n.teams > (a.teams || 0) ? n : a, {});
+  const avgTeams = Math.round(nights.reduce((s, n) => s + n.teams, 0) / nights.length);
+
+  const k = el('div', 'kpis');
+  k.appendChild(tile('Nights recorded', nights.length));
+  k.appendChild(tile('Reigning champs', null, null));
+  k.lastChild.querySelector('.value').textContent = latest.winner || '—';
+  k.lastChild.querySelector('.value').style.fontSize = '17px';
+  k.lastChild.appendChild(el('div', 'note', fmtDate(latest.date)));
+  k.appendChild(tile('All-time high score', allHigh.high_score, allHigh.winner + ' · ' + shortDate(allHigh.date)));
+  k.appendChild(tile('Attendance record', maxTeams.teams + ' teams', shortDate(maxTeams.date)));
+  k.appendChild(tile('Average turnout', avgTeams + ' teams', 'per night'));
+  if (DATA.records && DATA.records.avg_winning_score) {
+    k.appendChild(tile('Avg winning score', DATA.records.avg_winning_score, 'points to take the night'));
+  }
+  v.appendChild(k);
+
+  // latest night
+  const h = el('h2', null, 'Latest night — ' + fmtDate(latest.date));
+  v.appendChild(h);
+  const wrap = el('div', 'cards2');
+  const scard = el('div', 'card');
+  scard.appendChild(el('h3', null, 'Top 10'));
+  scard.appendChild(standingsTable(latest, 10));
+  wrap.appendChild(scard);
+  const right = el('div');
+  right.appendChild(turtleCard(latest));
+  right.appendChild(missconCard(latest));
+  const diff = el('div', 'card');
+  diff.appendChild(el('h3', null, 'Night difficulty'));
+  if (latest.avg_correct_pct != null) {
+    const d = difficulty(latest.avg_correct_pct);
+    const p = el('div');
+    p.appendChild(el('span', 'diff-' + d, d));
+    p.appendChild(document.createTextNode(` — teams answered ${latest.avg_correct_pct}% of questions correctly.`));
+    diff.appendChild(p);
+  } else diff.appendChild(el('div', 'empty', 'Not enough data.'));
+  if (latest.free_q && latest.free_q.pct != null) {
+    diff.appendChild(el('div', 'sub',
+      `Free question: ${latest.free_q.correct} of ${latest.free_q.answered} teams got it (${latest.free_q.pct}%). It was FREE.`));
+  }
+  right.appendChild(diff);
+  wrap.appendChild(right);
+  v.appendChild(wrap);
+
+  v.appendChild(el('h2', null, 'Record book'));
+  const R = DATA.records || {};
+  const rb = el('div', 'cards3');
+  const spanTxt = r => shortDate(r.from) + ' → ' + shortDate(r.to);
+  if (R.top_scores) rb.appendChild(recordCard('Highest scores ever',
+    R.top_scores.map(r => ({ a: r.team, sub: fmtDate(r.date), b: r.score })), true));
+  const byGames = [...DATA.teams_alltime].sort((a, b) => b.games - a.games).slice(0, 10);
+  rb.appendChild(recordCard('Most nights played', byGames.map(t => ({ a: t.team, b: t.games })), true));
+  if (R.top10_finishes) rb.appendChild(recordCard('Most top-10 finishes',
+    R.top10_finishes.map(t => ({ a: t.team, b: t.count })), true));
+  if (R.second_finishes) rb.appendChild(recordCard('Most 2nd-place finishes',
+    R.second_finishes.map(t => ({ a: t.team, b: t.count })), true));
+  if (R.third_finishes) rb.appendChild(recordCard('Most 3rd-place finishes',
+    R.third_finishes.map(t => ({ a: t.team, b: t.count })), true));
+  const byTurtle = [...DATA.teams_alltime].sort((a, b) => b.turtle_wins - a.turtle_wins).slice(0, 10);
+  rb.appendChild(recordCard('\u{1F422} Most turtle race wins', byTurtle.map(t => ({ a: t.team, b: t.turtle_wins })), true));
+  if (R.win_streaks) rb.appendChild(recordCard('Longest win streaks',
+    R.win_streaks.filter(r => r.len > 1).slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len + ' in a row' })), true));
+  if (R.attendance_streaks) rb.appendChild(recordCard('Attendance iron-teams — weeks in a row',
+    R.attendance_streaks.slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len })), true));
+  if (R.fastest_fingers && R.fastest_fingers.length) rb.appendChild(recordCard('Fastest fingers — most speed bonuses won',
+    R.fastest_fingers.map(t => ({ a: t.team, b: t.count })), true));
+  if (R.turtle_streaks) rb.appendChild(recordCard('Turtle race hot hands — races won in a row',
+    R.turtle_streaks.filter(r => r.len > 1).slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len })), true));
+  v.appendChild(rb);
+
+  // ---------- Trends: past year ----------
+  const lastDate = nights[nights.length - 1].date;
+  const cutoff = new Date(lastDate);
+  cutoff.setFullYear(cutoff.getFullYear() - 1);
+  const cutStr = cutoff.toISOString().slice(0, 10);
+  const yearN = nights.filter(n => n.date >= cutStr);
+  v.appendChild(el('h2', null, 'Trends — past year'));
+  v.appendChild(el('p', 'sub', yearN.length + ' nights since ' + fmtDate(cutStr)));
+  const yk = el('div', 'kpis');
+  const yAvgTeams = Math.round(10 * yearN.reduce((s, n) => s + n.teams, 0) / yearN.length) / 10;
+  const yWins = yearN.filter(n => (n.high_score || 0) >= 300);
+  const yAvgWin = yWins.length ? Math.round(yWins.reduce((s, n) => s + n.high_score, 0) / yWins.length) : null;
+  const yDiff = yearN.filter(n => n.avg_correct_pct != null);
+  const yAvgDiff = yDiff.length ? Math.round(yDiff.reduce((s, n) => s + n.avg_correct_pct, 0) / yDiff.length) : null;
+  const yFree = yearN.filter(n => n.free_q && n.free_q.pct != null);
+  const yFc = yFree.reduce((s, n) => s + n.free_q.correct, 0);
+  const yFa = yFree.reduce((s, n) => s + n.free_q.answered, 0);
+  yk.appendChild(tile('Avg attendance', yAvgTeams, 'teams per night'));
+  if (yAvgWin != null) yk.appendChild(tile('Avg winning score', yAvgWin, 'points'));
+  if (yAvgDiff != null) yk.appendChild(tile('Avg difficulty', yAvgDiff + '%', 'answered right'));
+  if (yFa) yk.appendChild(tile('Free question success', Math.round(100 * yFc / yFa) + '%', yFc + ' of ' + yFa + ' answers'));
+  v.appendChild(yk);
+  lineChart(v, {
+    title: 'Attendance — past year',
+    points: yearN.map(n => ({ x: n.date, y: n.teams })),
+    yLabel: 'teams', tableCols: ['Night', 'Teams'],
+  });
+  lineChart(v, {
+    title: 'Winning score — past year',
+    points: yearN.map(n => ({ x: n.date, y: n.high_score || 0 })),
+    yLabel: 'points', tableCols: ['Night', 'Winning score'],
+  });
+  if (yDiff.length > 2) {
+    lineChart(v, {
+      title: 'Difficulty — past year (% answered correctly)',
+      points: yDiff.map(n => ({ x: n.date, y: n.avg_correct_pct })),
+      yLabel: '% correct', fmt: vv => vv + '%', tableCols: ['Night', '% correct'],
+    });
+  }
+
+  // ---------- Trends: all time ----------
+  v.appendChild(el('h2', null, 'Trends — all time'));
+  const tk = el('div', 'kpis');
+  if (R.avg_teams != null) tk.appendChild(tile('Avg attendance', R.avg_teams, 'teams per night'));
+  if (R.avg_winning_score != null) tk.appendChild(tile('Avg winning score', R.avg_winning_score, 'points'));
+  if (R.avg_difficulty != null) tk.appendChild(tile('Avg difficulty', R.avg_difficulty + '%', 'questions answered right'));
+  if (R.free_q_overall && R.free_q_overall.pct != null)
+    tk.appendChild(tile('Free question success', R.free_q_overall.pct + '%',
+      R.free_q_overall.correct + ' of ' + R.free_q_overall.answered + ' answers. It was free.'));
+  v.appendChild(tk);
+
+  // attendance patterns
+  const pat = el('div', 'cards3');
+  const patCard = (title, rows, unit) => {
+    const c = el('div', 'card');
+    c.appendChild(el('h3', null, title));
+    const best = Math.max(...rows.map(r => r.avg)), worst = Math.min(...rows.map(r => r.avg));
+    const tbl = el('table', 'data'); const tb = el('tbody');
+    rows.forEach(r => {
+      const tr = el('tr');
+      const td = el('td', null, r.label);
+      if (r.avg === best) td.appendChild(el('span', 'badge', ' busiest'));
+      if (r.avg === worst) td.appendChild(el('span', 'badge gray', ' quietest'));
+      tr.appendChild(td);
+      tr.appendChild(el('td', 'num', String(r.avg)));
+      tr.appendChild(el('td', 'num', r.nights + ' nights'));
+      tb.appendChild(tr);
+    });
+    tbl.appendChild(tb); c.appendChild(tbl);
+    return c;
+  };
+  if (R.attendance_by_season) pat.appendChild(patCard('Avg teams by season', R.attendance_by_season));
+  if (R.attendance_by_nth_tuesday) pat.appendChild(patCard('Avg teams by Tuesday of the month', R.attendance_by_nth_tuesday));
+  if (R.attendance_by_month) pat.appendChild(patCard('Avg teams by month', R.attendance_by_month));
+  v.appendChild(pat);
+  if (R.best_month && R.worst_month) {
+    v.appendChild(el('p', 'sub', 'Best month ever: ' + R.best_month.label + ' (' + R.best_month.avg +
+      ' teams avg) · Quietest: ' + R.worst_month.label + ' (' + R.worst_month.avg + ' teams avg)'));
+  }
+
+  lineChart(v, {
+    title: 'Attendance — all time',
+    subtitle: R.avg_teams != null ? 'all-time average: ' + R.avg_teams + ' teams' : null,
+    points: nights.map(n => ({ x: n.date, y: n.teams })),
+    yLabel: 'teams', tableCols: ['Night', 'Teams'],
+  });
+  lineChart(v, {
+    title: 'Winning score — all time',
+    subtitle: R.avg_winning_score != null ? 'all-time average: ' + R.avg_winning_score + ' points' : null,
+    points: nights.map(n => ({ x: n.date, y: n.high_score || 0 })),
+    yLabel: 'points', tableCols: ['Night', 'Winning score'],
+  });
+  const withPct = nights.filter(n => n.avg_correct_pct != null);
+  if (withPct.length) {
+    lineChart(v, {
+      title: 'Difficulty (average % of questions answered correctly — lower = harder)',
+      subtitle: R.avg_difficulty != null ? 'all-time average: ' + R.avg_difficulty + '%' : null,
+      points: withPct.map(n => ({ x: n.date, y: n.avg_correct_pct })),
+      yLabel: '% correct', fmt: vv => vv + '%', tableCols: ['Night', '% correct'],
+    });
+  }
+  const withFree = nights.filter(n => n.free_q && n.free_q.pct != null);
+  if (withFree.length > 2) {
+    lineChart(v, {
+      title: 'The Free Question™ — % of teams who still got it right',
+      subtitle: (R.free_q_overall && R.free_q_overall.pct != null) ? 'all-time: ' + R.free_q_overall.pct + '% — it was free' : null,
+      points: withFree.map(n => ({ x: n.date, y: n.free_q.pct })),
+      yLabel: '% correct', fmt: vv => vv + '%', tableCols: ['Night', '% correct'],
+    });
+  }
+}
+
+/* ---------- nights browser ---------- */
+function renderNights() {
+  const v = $('#view-nights');
+  v.replaceChildren();
+  const nights = [...DATA.nights].reverse();
+  if (!nights.length) { v.appendChild(el('div', 'empty', 'No nights yet.')); return; }
+  const row = el('div', 'filter-row');
+  const sel = el('select', 'picker');
+  sel.setAttribute('aria-label', 'Pick a night');
+  nights.forEach((n, i) => {
+    const o = el('option', null, fmtDate(n.date) + ` — ${n.teams} teams` + (n.real ? '' : ' (practice/test)'));
+    o.value = String(i);
+    sel.appendChild(o);
+  });
+  row.appendChild(sel);
+  v.appendChild(row);
+  const holder = el('div');
+  v.appendChild(holder);
+
+  const show = i => {
+    const n = nights[i];
+    holder.replaceChildren();
+    const k = el('div', 'kpis');
+    k.appendChild(tile('Teams', n.teams));
+    const d = difficulty(n.avg_correct_pct);
+    k.appendChild(tile('Difficulty', d || '—', n.avg_correct_pct != null ? n.avg_correct_pct + '% answered right' : ''));
+    k.appendChild(tile('Winning score', n.high_score, n.winner));
+    holder.appendChild(k);
+    if (n.free_q && n.free_q.pct != null) {
+      holder.appendChild(el('p', 'sub',
+        `Free question: ${n.free_q.correct} of ${n.free_q.answered} teams got it right (${n.free_q.pct}%).`));
+    }
+    if (n.label) holder.appendChild(el('p', 'sub', n.label));
+
+    const wrap = el('div', 'cards2');
+    const scard = el('div', 'card');
+    scard.appendChild(el('h3', null, 'Final standings'));
+    scard.appendChild(standingsTable(n));
+    wrap.appendChild(scard);
+    const right = el('div');
+    // running order card
+    const rc = el('div', 'card');
+    rc.appendChild(el('h3', null, 'Running order'));
+    const rt = el('table', 'data');
+    const rth = el('thead'); const rtr = el('tr');
+    ['Round', 'Questions', '% correct'].forEach((c, i) => rtr.appendChild(el('th', i ? 'num' : null, c)));
+    rth.appendChild(rtr); rt.appendChild(rth);
+    const rtb = el('tbody');
+    n.round_tags.forEach(r => {
+      const tr = el('tr');
+      tr.appendChild(el('td', null, r.name || r.round_id));
+      tr.appendChild(el('td', 'num', String(r.questions)));
+      tr.appendChild(el('td', 'num', r.pct != null ? r.pct + '%' : '—'));
+      rtb.appendChild(tr);
+    });
+    rt.appendChild(rtb); rc.appendChild(rt);
+    right.appendChild(rc);
+    right.appendChild(turtleCard(n));
+    right.appendChild(missconCard(n));
+    if (n.tiebreakers && n.tiebreakers.length) {
+      const tb = el('div', 'card');
+      tb.appendChild(el('h3', null, 'Tiebreaker'));
+      n.tiebreakers.forEach(t => {
+        tb.appendChild(el('div', 'sub', t.winners && t.winners.length
+          ? 'Won by: ' + t.winners.join(', ') : 'No winner recorded.'));
+      });
+      right.appendChild(tb);
+    }
+    wrap.appendChild(right);
+    holder.appendChild(wrap);
+  };
+  sel.addEventListener('change', () => show(Number(sel.value)));
+  show(0);
+}
+
+/* ---------- teams ---------- */
+function renderTeams() {
+  const v = $('#view-teams');
+  v.replaceChildren();
+  const teams = DATA.teams_alltime;
+  if (!teams.length) { v.appendChild(el('div', 'empty', 'No team records yet.')); return; }
+  v.appendChild(el('h2', null, 'All-time team records'));
+  v.appendChild(el('p', 'sub', 'Across ' + realNights().length + ' recorded nights. Sort by any column. Teams that riff on their name each week (looking at you, pizza cats) are grouped — tap "+N names" to see every alias.'));
+  const frow = el('div', 'filter-row');
+  const fsel = el('select', 'picker');
+  [[2, 'Regulars — played 2+ nights'], [5, 'Played 5+ nights'], [10, 'Played 10+ nights'], [1, 'Every team ever']].forEach(([min, lab]) => {
+    const o = el('option', null, lab); o.value = String(min); fsel.appendChild(o);
+  });
+  frow.appendChild(fsel);
+  const fcount = el('span', 'sub', '');
+  frow.appendChild(fcount);
+  v.appendChild(frow);
+  const card = el('div', 'card');
+  const tbl = el('table', 'data');
+  const cols = [
+    ['team', 'Team', false], ['games', 'Nights', true], ['wins', 'Wins', true],
+    ['points', 'Total pts', true], ['best', 'Best night', true],
+    ['turtle_wins', '🐢 wins', true], ['misscon', 'MC wins', true], ['last_seen', 'Last seen', false],
+  ];
+  const thead = el('thead'); const trh = el('tr');
+  let sortKey = 'points', sortDir = -1;
+  cols.forEach(([key, label, num]) => {
+    const th = el('th', num ? 'num' : null, label);
+    th.style.cursor = 'pointer';
+    th.addEventListener('click', () => {
+      if (sortKey === key) sortDir *= -1; else { sortKey = key; sortDir = num ? -1 : 1; }
+      draw();
+    });
+    trh.appendChild(th);
+  });
+  thead.appendChild(trh); tbl.appendChild(thead);
+  const tb = el('tbody'); tbl.appendChild(tb);
+  const draw = () => {
+    const minG = Number(fsel.value);
+    const pool = teams.filter(t => t.games >= minG);
+    fcount.textContent = pool.length + ' teams';
+    const sorted = [...pool].sort((a, b) => {
+      const av = a[sortKey], bv = b[sortKey];
+      return (av < bv ? -1 : av > bv ? 1 : 0) * sortDir;
+    });
+    tb.replaceChildren();
+    sorted.forEach(t => {
+      const tr = el('tr');
+      const nameTd = el('td');
+      nameTd.appendChild(teamLink(t.team));
+      if (t.aka && t.aka.length) {
+        const chip = el('button', 'aka-btn', '+' + t.aka.length + ' names');
+        const list = el('div', 'aka-list hidden');
+        t.aka.forEach(a => list.appendChild(el('div', null, a)));
+        chip.addEventListener('click', () => {
+          list.classList.toggle('hidden');
+          chip.textContent = list.classList.contains('hidden')
+            ? '+' + t.aka.length + ' names' : 'hide names';
+        });
+        nameTd.appendChild(chip);
+        nameTd.appendChild(list);
+      }
+      tr.appendChild(nameTd);
+      tr.appendChild(el('td', 'num', String(t.games)));
+      tr.appendChild(el('td', 'num', String(t.wins)));
+      tr.appendChild(el('td', 'num', String(t.points)));
+      tr.appendChild(el('td', 'num', String(t.best)));
+      tr.appendChild(el('td', 'num', String(t.turtle_wins)));
+      tr.appendChild(el('td', 'num', String(t.misscon)));
+      tr.appendChild(el('td', null, t.last_seen ? shortDate(t.last_seen) : '—'));
+      tb.appendChild(tr);
+    });
+  };
+  fsel.addEventListener('change', draw);
+  draw();
+  card.appendChild(tbl);
+  v.appendChild(card);
+}
+
+/* ---------- turtle race ---------- */
+function renderTurtle() {
+  const v = $('#view-turtle');
+  v.replaceChildren();
+  v.appendChild(el('h2', null, 'Turtle Race Record Book \u{1F422}'));
+  const nights = realNights().filter(n => n.turtle);
+  if (!nights.length) {
+    v.appendChild(el('div', 'empty', 'No turtle races recorded yet. The turtles are resting.'));
+    return;
+  }
+  const tally = DATA.turtle_tally || {};
+  const total = nights.length;
+  const k = el('div', 'kpis');
+  k.appendChild(tile('Races recorded', total));
+  const entries = Object.entries(tally).sort((a, b) => b[1] - a[1]);
+  if (entries.length) {
+    k.appendChild(tile('Winningest turtle', '#' + entries[0][0], entries[0][1] + ' wins'));
+  }
+  const lastRace = nights[nights.length - 1];
+  k.appendChild(tile('Last winner', '#' + lastRace.turtle.winning_turtle, shortDate(lastRace.date)));
+  const pickRates = nights.filter(n => n.turtle.total_picks > 0);
+  if (pickRates.length) {
+    const avg = Math.round(100 * pickRates.reduce((s, n) => s + n.turtle.correct_picks / n.turtle.total_picks, 0) / pickRates.length);
+    k.appendChild(tile('Crowd pick rate', avg + '%', 'of teams back the winner'));
+  }
+  v.appendChild(k);
+
+  barChart(v, {
+    title: 'Wins by turtle',
+    bars: Object.entries(tally).sort((a, b) => Number(a[0]) - Number(b[0]))
+      .map(([num, wins]) => ({ label: 'Turtle #' + num, value: wins })),
+    valueLabel: 'wins',
+  });
+
+  const byTurtleW = [...DATA.teams_alltime].sort((a, b) => b.turtle_wins - a.turtle_wins).slice(0, 10);
+  v.appendChild(recordCard('Sharpest turtle bettors — most race wins all-time',
+    byTurtleW.map(t => ({ a: t.team, b: t.turtle_wins })), true));
+
+  const card = el('div', 'card');
+  card.appendChild(el('h3', null, 'Race history'));
+  const tbl = el('table', 'data');
+  const thead = el('thead'); const trh = el('tr');
+  ['Night', 'Winning turtle', 'Right picks', 'Winning bets'].forEach((c, i) =>
+    trh.appendChild(el('th', i === 2 ? 'num' : null, c)));
+  thead.appendChild(trh); tbl.appendChild(thead);
+  const tb = el('tbody');
+  [...nights].reverse().forEach(n => {
+    const tr = el('tr');
+    tr.appendChild(el('td', null, fmtDate(n.date)));
+    tr.appendChild(el('td', null, '#' + n.turtle.winning_turtle));
+    tr.appendChild(el('td', 'num', n.turtle.total_picks ? `${n.turtle.correct_picks}/${n.turtle.total_picks}` : '—'));
+    tr.appendChild(el('td', null, (n.turtle.winning_teams || []).join(', ') || '—'));
+    tb.appendChild(tr);
+  });
+  tbl.appendChild(tb);
+  card.appendChild(tbl);
+  v.appendChild(card);
+}
+
+/* ---------- shell ---------- */
+const tabs = document.getElementById('tabs');
+tabs.addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  tabs.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+  document.querySelectorAll('section.view').forEach(s =>
+    s.classList.toggle('active', s.id === 'view-' + btn.dataset.view));
+});
+
+function render() {
+  buildCanon();
+  RANKS = null;
+  renderOverview();
+  renderNights();
+  renderTeams();
+  renderTurtle();
+  $('#foot').textContent = 'Stats through ' + fmtDate(realNights()[realNights().length - 1].date) + ' · 5801 Trivia, Pittsburgh · Turtle race results are final. No refunds.';
+}
+
+fetch('data.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(d => { DATA = d; render(); })
+  .catch(() => {
+    $('#view-overview').replaceChildren(
+      el('div', 'empty', 'Could not load scores data. If you are the host: make sure data.json is uploaded next to index.html.'));
+  });
+</script>
+</body>
+</html>
