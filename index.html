@@ -556,8 +556,9 @@ function buildRanks() {
                   top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0 };
   });
   const g = c => m[c] || (m[c] = { games: 0, points: 0, wins: 0, turtle: 0, mc: 0, best: 0,
-                                   fastest: 0, top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0 });
+                                   fastest: 0, top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0, curRun: 0 });
   const att = {}, turt = {};
+  const presenceSeq = [];
   let curWinner = null, winRun = 0;
   const allScores = [];
   nights.forEach(n => {
@@ -580,6 +581,7 @@ function buildRanks() {
       att[c] = (att[c] || 0) + 1;
       if (att[c] > g(c).attRun) g(c).attRun = att[c];
     });
+    presenceSeq.push(present);
     // win streaks
     const w = n.standings.length ? canonOf(n.standings[0].team) : null;
     winRun = (w && w === curWinner) ? winRun + 1 : 1;
@@ -594,9 +596,17 @@ function buildRanks() {
       });
     }
   });
+  // active streaks (counted back from the latest night)
+  if (presenceSeq.length) {
+    presenceSeq[presenceSeq.length - 1].forEach(c => {
+      let L = 0;
+      for (let i = presenceSeq.length - 1; i >= 0 && presenceSeq[i].has(c); i--) L++;
+      g(c).curRun = L;
+    });
+  }
   allScores.sort((a, b) => b - a);
   const cols = {};
-  ['games', 'points', 'wins', 'turtle', 'mc', 'fastest', 'top10', 'p2', 'p3', 'attRun', 'winRun', 'turtRun'].forEach(k => {
+  ['games', 'points', 'wins', 'turtle', 'mc', 'fastest', 'top10', 'p2', 'p3', 'attRun', 'winRun', 'turtRun', 'curRun'].forEach(k => {
     cols[k] = Object.values(m).map(x => x[k]).sort((a, b) => b - a);
   });
   RANKS = { m, cols, allScores, total: Object.keys(m).length };
@@ -728,6 +738,7 @@ function openTeamModal(canon) {
     if (me.fastest > 0) row('Speed bonuses won', rankOf(me.fastest, RANKS.cols.fastest), me.fastest + ' fastest answers');
     row('Miss Congeniality wins', rankOf(me.mc, RANKS.cols.mc), me.mc + ' crowns');
     row('Longest attendance streak', rankOf(me.attRun, RANKS.cols.attRun), me.attRun + ' straight');
+    if (me.curRun > 0) row('Current attendance streak', rankOf(me.curRun, RANKS.cols.curRun), me.curRun + ' and counting');
     if (me.winRun > 0) row('Longest win streak', rankOf(me.winRun, RANKS.cols.winRun), me.winRun + ' in a row');
     if (me.turtRun > 0) row('Longest turtle-race streak', rankOf(me.turtRun, RANKS.cols.turtRun), me.turtRun + ' in a row');
     box.appendChild(rk);
@@ -923,6 +934,9 @@ function renderOverview() {
     R.attendance_streaks.slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len })), true));
   if (R.fastest_fingers && R.fastest_fingers.length) rb.appendChild(recordCard('Fastest fingers — most speed bonuses won',
     R.fastest_fingers.map(t => ({ a: t.team, b: t.count })), true));
+  if (R.current_streaks && R.current_streaks.length) rb.appendChild(recordCard(
+    'Active attendance streaks' + (R.latest_night ? ' — as of ' + shortDate(R.latest_night) : ''),
+    R.current_streaks.filter(r => r.len > 1).map(r => ({ a: r.team, sub: 'every week since ' + shortDate(r.since), b: r.len })), true));
   if (R.turtle_streaks) rb.appendChild(recordCard('Turtle race hot hands — races won in a row',
     R.turtle_streaks.filter(r => r.len > 1).slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len })), true));
   v.appendChild(rb);

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-10 15:50 UTC",
+ "generated": "2026-08-10 18:54 UTC",
  "venue": "5801 Video Lounge & Cafe, Pittsburgh",
  "nights": [
   {
@@ -187353,6 +187353,59 @@
     "count": 68
    }
   ],
+  "current_streaks": [
+   {
+    "team": "Tom's 'Stache",
+    "len": 34,
+    "since": "2025-11-25"
+   },
+   {
+    "team": "Gum Cutters",
+    "len": 19,
+    "since": "2026-03-24"
+   },
+   {
+    "team": "Cummin In Hawt",
+    "len": 15,
+    "since": "2026-04-21"
+   },
+   {
+    "team": "hi my name is Tom and Im an alcoholic",
+    "len": 13,
+    "since": "2026-05-05"
+   },
+   {
+    "team": "The Pizza Cats",
+    "len": 12,
+    "since": "2026-05-12"
+   },
+   {
+    "team": "BOGO",
+    "len": 7,
+    "since": "2026-06-23"
+   },
+   {
+    "team": "No Sports Please",
+    "len": 4,
+    "since": "2026-07-14"
+   },
+   {
+    "team": "like whatever",
+    "len": 4,
+    "since": "2026-07-14"
+   },
+   {
+    "team": "My Drinking Team Has a Trivia Problem",
+    "len": 3,
+    "since": "2026-07-21"
+   },
+   {
+    "team": "Serving Cunt Missing Answers",
+    "len": 2,
+    "since": "2026-07-28"
+   }
+  ],
+  "latest_night": "2026-08-04",
   "second_finishes": [
    {
     "team": "Cummin In Hawt",
