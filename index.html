@@ -556,7 +556,8 @@ function buildRanks() {
                   top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0 };
   });
   const g = c => m[c] || (m[c] = { games: 0, points: 0, wins: 0, turtle: 0, mc: 0, best: 0,
-                                   fastest: 0, top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0, curRun: 0 });
+                                   fastest: 0, r1: 0, r2: 0, r3: 0, r4: 0,
+                                   top10: 0, p2: 0, p3: 0, attRun: 0, winRun: 0, turtRun: 0, curRun: 0 });
   const att = {}, turt = {};
   const presenceSeq = [];
   let curWinner = null, winRun = 0;
@@ -606,7 +607,8 @@ function buildRanks() {
   }
   allScores.sort((a, b) => b - a);
   const cols = {};
-  ['games', 'points', 'wins', 'turtle', 'mc', 'fastest', 'top10', 'p2', 'p3', 'attRun', 'winRun', 'turtRun', 'curRun'].forEach(k => {
+  ['games', 'points', 'wins', 'turtle', 'mc', 'fastest', 'top10', 'p2', 'p3',
+   'r1', 'r2', 'r3', 'r4', 'attRun', 'winRun', 'turtRun', 'curRun'].forEach(k => {
     cols[k] = Object.values(m).map(x => x[k]).sort((a, b) => b - a);
   });
   RANKS = { m, cols, allScores, total: Object.keys(m).length };
@@ -704,6 +706,12 @@ function openTeamModal(canon) {
   fact('Top-10 finishes', top10s + ' of ' + apps.length + ' nights');
   fact('Turtle race wins', t ? t.turtle_wins : apps.filter(a => a.turtle).length);
   if (t && t.fastest) fact('Speed bonuses won (fastest correct answer)', t.fastest + ' \u00d7 2 pts');
+  if (t && t.round_wins) {
+    ['General Knowledge', 'Name That Tune', 'Current Events', 'Wildcard'].forEach((rn, i) => {
+      const c = t.round_wins[rn];
+      if (c) fact('Round ' + (i + 1) + ' wins \u00b7 ' + rn, c);
+    });
+  }
   fact('Miss Congeniality wins', t ? t.misscon : apps.filter(a => a.mc).length);
   if (bestRun > 1 && bestSpan) fact('Longest attendance run', bestRun + ' straight nights (' +
     shortDate(bestSpan[0]) + ' \u2192 ' + shortDate(bestSpan[1]) + ')');
@@ -736,6 +744,10 @@ function openTeamModal(canon) {
     if (me.p3 > 0) row('3rd-place finishes', rankOf(me.p3, RANKS.cols.p3), me.p3 + '\u00d7');
     row('Turtle race wins', rankOf(me.turtle, RANKS.cols.turtle), me.turtle + ' \u{1F422}');
     if (me.fastest > 0) row('Speed bonuses won', rankOf(me.fastest, RANKS.cols.fastest), me.fastest + ' fastest answers');
+    [['r1', 'Round 1 wins (General Knowledge)'], ['r2', 'Round 2 wins (Name That Tune)'],
+     ['r3', 'Round 3 wins (Current Events)'], ['r4', 'Round 4 wins (Wildcard)']].forEach(([k, label]) => {
+      if (me[k] > 0) row(label, rankOf(me[k], RANKS.cols[k]), me[k] + '\u00d7');
+    });
     row('Miss Congeniality wins', rankOf(me.mc, RANKS.cols.mc), me.mc + ' crowns');
     row('Longest attendance streak', rankOf(me.attRun, RANKS.cols.attRun), me.attRun + ' straight');
     if (me.curRun > 0) row('Current attendance streak', rankOf(me.curRun, RANKS.cols.curRun), me.curRun + ' and counting');
@@ -932,6 +944,13 @@ function renderOverview() {
     R.win_streaks.filter(r => r.len > 1).slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len + ' in a row' })), true));
   if (R.attendance_streaks) rb.appendChild(recordCard('Attendance iron-teams — weeks in a row',
     R.attendance_streaks.slice(0, 10).map(r => ({ a: r.team, sub: spanTxt(r), b: r.len })), true));
+  const ROUND_ORDER = ['General Knowledge', 'Name That Tune', 'Current Events', 'Wildcard'];
+  if (R.round_leaders) ROUND_ORDER.forEach((rn, i) => {
+    const lst = R.round_leaders[rn];
+    if (lst && lst.length) rb.appendChild(recordCard(
+      'Round ' + (i + 1) + ' wins — ' + rn,
+      lst.map(t => ({ a: t.team, b: t.count })), true));
+  });
   if (R.fastest_fingers && R.fastest_fingers.length) rb.appendChild(recordCard('Fastest fingers — most speed bonuses won',
     R.fastest_fingers.map(t => ({ a: t.team, b: t.count })), true));
   if (R.current_streaks && R.current_streaks.length) rb.appendChild(recordCard(
@@ -1283,7 +1302,7 @@ function render() {
   renderNights();
   renderTeams();
   renderTurtle();
-  $('#foot').textContent = 'Stats through ' + fmtDate(realNights()[realNights().length - 1].date) + ' · 5801 Trivia, Pittsburgh · Turtle race results are final. No refunds.';
+  $('#foot').textContent = 'Stats through ' + fmtDate(realNights()[realNights().length - 1].date) + ' \u00b7 5801 Trivia, Pittsburgh \u00b7 Team names are grouped by hand \u2014 contact Tom to combine your team\u2019s names or with any questions about the data. \u00b7 Turtle race results are final. No refunds.';
 }
 
 fetch('data.json?v=' + Date.now())
