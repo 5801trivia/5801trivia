@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02 23:10 UTC",
+ "generated": "2026-09-16 13:58 UTC",
  "venue": "5801 Video Lounge & Cafe, Pittsburgh",
  "nights": [
   {
@@ -112950,24 +112950,662 @@
    "sources": [
     "session-current.json"
    ]
+  },
+  {
+   "date": "2026-09-08",
+   "weekday": "Tuesday",
+   "label": null,
+   "real": true,
+   "teams": 28,
+   "standings": [
+    {
+     "team": "Ride Sally's Ride",
+     "total": 546,
+     "turtle_pts": 0,
+     "misscon_correct": false,
+     "adjust": 10
+    },
+    {
+     "team": "The Inner Machinations of my mind are an enigma",
+     "total": 542,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "Cummin In Hawt",
+     "total": 522,
+     "turtle_pts": 0,
+     "misscon_correct": true
+    },
+    {
+     "team": "meowCATor projection? i hardly know 'er projection",
+     "total": 518,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "counting or not counting tom's mustache",
+     "total": 512,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "My Drinking Team Has a Trivia Problem",
+     "total": 512,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "LilstickyLadyFingers",
+     "total": 492,
+     "turtle_pts": 0,
+     "misscon_correct": false,
+     "adjust": 30
+    },
+    {
+     "team": "No Sports Please",
+     "total": 476,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "yea cream on it",
+     "total": 446,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Serving Fish",
+     "total": 434,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Twihards",
+     "total": 430,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Multiple Scoregasms",
+     "total": 426,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Jack Mehoff",
+     "total": 420,
+     "turtle_pts": 10,
+     "misscon_correct": false,
+     "adjust": 10
+    },
+    {
+     "team": "Quiz Me Daddy",
+     "total": 402,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Serving Cunt Missing Answers",
+     "total": 400,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Caulk Destroyers",
+     "total": 374,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "ur bitch aunt jennifer",
+     "total": 358,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "voodoo clams",
+     "total": 352,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Wolf Birds",
+     "total": 350,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "gabby pentin",
+     "total": 312,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "Cherry Panda Paws",
+     "total": 216,
+     "turtle_pts": 0,
+     "misscon_correct": false,
+     "adjust": 10
+    },
+    {
+     "team": "Rukas and Friends",
+     "total": 202,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "hi my name is Tom and Im an alcoholic",
+     "total": 202,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Carol Channing Tatum",
+     "total": 200,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "gum cutters for ems' birthday",
+     "total": 192,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "lexi girl head",
+     "total": 162,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "ehhhhhhhhh put it in the pizza",
+     "total": 160,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "hot tamales",
+     "total": 150,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    }
+   ],
+   "num_rounds": 7,
+   "round_tags": [
+    {
+     "round_id": "1_keypad",
+     "tag": "trivia",
+     "name": "General Knowledge",
+     "pct": 68,
+     "questions": 15
+    },
+    {
+     "round_id": "2_keypad",
+     "tag": "trivia",
+     "name": "Name That Tune",
+     "pct": 62,
+     "questions": 15
+    },
+    {
+     "round_id": "3_nearest",
+     "tag": "tiebreaker",
+     "name": "Tiebreaker",
+     "pct": 100,
+     "questions": 1
+    },
+    {
+     "round_id": "4_keypad",
+     "tag": "turtle",
+     "name": "Turtle Race",
+     "pct": 24,
+     "questions": 1
+    },
+    {
+     "round_id": "5_keypad",
+     "tag": "trivia",
+     "name": "Current Events",
+     "pct": 69,
+     "questions": 15
+    },
+    {
+     "round_id": "6_keypad",
+     "tag": "trivia",
+     "name": "Wildcard",
+     "pct": 84,
+     "questions": 15
+    },
+    {
+     "round_id": "7_nearest",
+     "tag": "misscon",
+     "name": "Miss Congeniality",
+     "pct": 6,
+     "questions": 1
+    }
+   ],
+   "free_q": {
+    "correct": 16,
+    "answered": 21,
+    "pct": 76
+   },
+   "avg_correct_pct": 71,
+   "turtle": {
+    "round_id": "4_keypad",
+    "winning_turtle": "3",
+    "correct_picks": 5,
+    "total_picks": 21,
+    "winning_teams": [
+     "Jack Mehoff",
+     "The Inner Machinations of my mind are an enigma",
+     "counting or not counting tom's mustache",
+     "gabby pentin",
+     "meowCATor projection? i hardly know 'er projection"
+    ],
+    "fastest": "counting or not counting tom's mustache"
+   },
+   "miss_congeniality": {
+    "round_id": "7_nearest",
+    "q": "How many people simultaneously took a shot of Jeppson's Mal\u00f6rt at a Chicago bar to set a new world record?",
+    "answer": "1969",
+    "closest_guess": "1969",
+    "off": 0,
+    "correct_teams": [
+     "Cummin In Hawt"
+    ]
+   },
+   "tiebreakers": [
+    {
+     "round_id": "3_nearest",
+     "winners": [
+      "The Inner Machinations of my mind are an enigma"
+     ]
+    }
+   ],
+   "winner": "Ride Sally's Ride",
+   "high_score": 546,
+   "speed_bonuses": {
+    "Cherry Panda Paws": 3,
+    "The Inner Machinations of my mind are an enigma": 2,
+    "Quiz Me Daddy": 6,
+    "Serving Cunt Missing Answers": 5,
+    "ur bitch aunt jennifer": 4,
+    "lexi girl head": 1,
+    "Ride Sally's Ride": 3,
+    "gum cutters for ems' birthday": 1,
+    "No Sports Please": 3,
+    "voodoo clams": 6,
+    "meowCATor projection? i hardly know 'er projection": 4,
+    "yea cream on it": 3,
+    "hi my name is Tom and Im an alcoholic": 1,
+    "counting or not counting tom's mustache": 7,
+    "My Drinking Team Has a Trivia Problem": 1,
+    "Multiple Scoregasms": 3,
+    "Rukas and Friends": 1,
+    "Caulk Destroyers": 2,
+    "Serving Fish": 2,
+    "gabby pentin": 1,
+    "LilstickyLadyFingers": 1,
+    "Cummin In Hawt": 1
+   },
+   "round_winners": {
+    "General Knowledge": [
+     "No Sports Please"
+    ],
+    "Name That Tune": [
+     "counting or not counting tom's mustache"
+    ],
+    "Current Events": [
+     "Ride Sally's Ride"
+    ],
+    "Wildcard": [
+     "meowCATor projection? i hardly know 'er projection"
+    ]
+   },
+   "sources": [
+    "Session - 8%2F09%2F2026%2020%3A22%3A45.json"
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "weekday": "Tuesday",
+   "label": null,
+   "real": true,
+   "teams": 28,
+   "standings": [
+    {
+     "team": "Cummin In Hawt",
+     "total": 575,
+     "turtle_pts": 0,
+     "misscon_correct": false,
+     "adjust": -2
+    },
+    {
+     "team": "BOGO",
+     "total": 574,
+     "turtle_pts": 0,
+     "misscon_correct": false,
+     "adjust": 28
+    },
+    {
+     "team": "Ride Sally's Ride",
+     "total": 568,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "pizza cats will give u 5000 bucks if u let us win",
+     "total": 538,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "My Drinking Team Has a Trivia Problem",
+     "total": 534,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "LilstickyLadyFingers",
+     "total": 514,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "ehhhhhhhhhhhhhhhh put it in the pizza",
+     "total": 506,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "tom's mustache has dropped out of ed sheerans tour",
+     "total": 502,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "yea cream on it",
+     "total": 494,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Toms Deus Ex Machina of Pickled Enigmas",
+     "total": 488,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Flaw Peacock",
+     "total": 482,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Russian Dolla",
+     "total": 472,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Quiz Me Daddy",
+     "total": 472,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "SQUASH ME",
+     "total": 468,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "No Sports Please",
+     "total": 466,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Furby's Revenge",
+     "total": 462,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Wolf Birds",
+     "total": 450,
+     "turtle_pts": 10,
+     "misscon_correct": false
+    },
+    {
+     "team": "girls who fart",
+     "total": 448,
+     "turtle_pts": 0,
+     "misscon_correct": true
+    },
+    {
+     "team": "Spartans",
+     "total": 420,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Soup",
+     "total": 414,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "The Greek Table",
+     "total": 410,
+     "turtle_pts": 10,
+     "misscon_correct": false,
+     "adjust": 10
+    },
+    {
+     "team": "Catherine McCunty",
+     "total": 402,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Rukas and Friends",
+     "total": 380,
+     "turtle_pts": 10,
+     "misscon_correct": false,
+     "adjust": 10
+    },
+    {
+     "team": "Smartest Girls in School",
+     "total": 342,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "hi my name is Tom and Im an alcoholic",
+     "total": 250,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "Rhonda Santis",
+     "total": 220,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "gum cutters",
+     "total": 204,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    },
+    {
+     "team": "RAW",
+     "total": 60,
+     "turtle_pts": 0,
+     "misscon_correct": false
+    }
+   ],
+   "num_rounds": 8,
+   "round_tags": [
+    {
+     "round_id": "1_keypad",
+     "tag": "trivia",
+     "name": "General Knowledge",
+     "pct": 76,
+     "questions": 15
+    },
+    {
+     "round_id": "2_keypad",
+     "tag": "trivia",
+     "name": "Name That Tune",
+     "pct": 74,
+     "questions": 15
+    },
+    {
+     "round_id": "3_nearest",
+     "tag": "tiebreaker",
+     "name": "Tiebreaker",
+     "pct": 50,
+     "questions": 1
+    },
+    {
+     "round_id": "4_keypad",
+     "tag": "turtle",
+     "name": "Turtle Race",
+     "pct": 15,
+     "questions": 1
+    },
+    {
+     "round_id": "5_keypad",
+     "tag": "trivia",
+     "name": "Current Events",
+     "pct": 80,
+     "questions": 15
+    },
+    {
+     "round_id": "6_keypad",
+     "tag": "trivia",
+     "name": "Wildcard",
+     "pct": 82,
+     "questions": 15
+    },
+    {
+     "round_id": "7_nearest",
+     "tag": "misscon",
+     "name": "Miss Congeniality",
+     "pct": 5,
+     "questions": 1
+    },
+    {
+     "round_id": "8_keypad",
+     "tag": "tiebreaker",
+     "name": "Tiebreaker",
+     "pct": 100,
+     "questions": 1
+    }
+   ],
+   "free_q": null,
+   "avg_correct_pct": 78,
+   "turtle": {
+    "round_id": "4_keypad",
+    "winning_turtle": "4",
+    "correct_picks": 4,
+    "total_picks": 26,
+    "winning_teams": [
+     "Rukas and Friends",
+     "The Greek Table",
+     "Wolf Birds",
+     "ehhhhhhhhhhhhhhhh put it in the pizza"
+    ],
+    "fastest": "Rukas and Friends"
+   },
+   "miss_congeniality": {
+    "round_id": "7_nearest",
+    "q": "In what year was the Walt Disney Company founded?",
+    "answer": "1923",
+    "closest_guess": "1923",
+    "off": 0,
+    "correct_teams": [
+     "girls who fart"
+    ]
+   },
+   "tiebreakers": [
+    {
+     "round_id": "3_nearest",
+     "winners": [
+      "pizza cats will give u 5000 bucks if u let us win"
+     ]
+    },
+    {
+     "round_id": "8_keypad",
+     "winners": [
+      "BOGO",
+      "Cummin In Hawt"
+     ]
+    }
+   ],
+   "winner": "Cummin In Hawt",
+   "high_score": 575,
+   "speed_bonuses": {
+    "No Sports Please": 3,
+    "Rukas and Friends": 6,
+    "Quiz Me Daddy": 6,
+    "gum cutters": 2,
+    "Toms Deus Ex Machina of Pickled Enigmas": 4,
+    "Soup": 2,
+    "My Drinking Team Has a Trivia Problem": 2,
+    "Ride Sally's Ride": 4,
+    "SQUASH ME": 4,
+    "Furby's Revenge": 1,
+    "girls who fart": 3,
+    "BOGO": 2,
+    "yea cream on it": 2,
+    "pizza cats will give u 5000 bucks if u let us win": 3,
+    "Catherine McCunty": 6,
+    "ehhhhhhhhhhhhhhhh put it in the pizza": 3,
+    "Cummin In Hawt": 2,
+    "tom's mustache has dropped out of ed sheerans tour": 1,
+    "LilstickyLadyFingers": 2,
+    "Russian Dolla": 1,
+    "Flaw Peacock": 1,
+    "Smartest Girls in School": 1
+   },
+   "round_winners": {
+    "General Knowledge": [
+     "BOGO"
+    ],
+    "Name That Tune": [
+     "Cummin In Hawt",
+     "pizza cats will give u 5000 bucks if u let us win"
+    ],
+    "Current Events": [
+     "LilstickyLadyFingers"
+    ],
+    "Wildcard": [
+     "Ride Sally's Ride"
+    ]
+   },
+   "sources": [
+    "Session - 15%2F09%2F2026%2020%3A19%3A53.json"
+   ]
   }
  ],
  "teams_alltime": [
   {
    "team": "Cummin In Hawt",
-   "games": 318,
-   "wins": 66,
-   "points": 163514,
+   "games": 320,
+   "wins": 67,
+   "points": 164611,
    "best": 594,
    "turtle_wins": 47,
-   "misscon": 16,
-   "last_seen": "2026-09-01",
-   "fastest": 824,
+   "misscon": 17,
+   "last_seen": "2026-09-15",
+   "fastest": 827,
    "round_wins": {
     "General Knowledge": 49,
     "Current Events": 56,
     "Wildcard": 31,
-    "Name That Tune": 68,
+    "Name That Tune": 69,
     "Wildcard 2": 11,
     "Wildcard 3": 1
    },
@@ -112980,16 +113618,16 @@
   },
   {
    "team": "BOGO",
-   "games": 302,
+   "games": 303,
    "wins": 15,
-   "points": 143027,
+   "points": 143601,
    "best": 582,
    "turtle_wins": 39,
    "misscon": 12,
-   "last_seen": "2026-09-01",
-   "fastest": 239,
+   "last_seen": "2026-09-15",
+   "fastest": 241,
    "round_wins": {
-    "General Knowledge": 26,
+    "General Knowledge": 27,
     "Current Events": 15,
     "Name That Tune": 13,
     "Wildcard": 26,
@@ -113008,14 +113646,14 @@
   },
   {
    "team": "hi my name is Tom and Im an alcoholic",
-   "games": 279,
+   "games": 281,
    "wins": 2,
-   "points": 115410,
+   "points": 115862,
    "best": 568,
    "turtle_wins": 38,
    "misscon": 13,
-   "last_seen": "2026-09-01",
-   "fastest": 414,
+   "last_seen": "2026-09-15",
+   "fastest": 415,
    "round_wins": {
     "Current Events": 7,
     "Wildcard": 5,
@@ -113031,13 +113669,13 @@
   },
   {
    "team": "Carol Channing",
-   "games": 238,
+   "games": 239,
    "wins": 6,
-   "points": 112724,
+   "points": 112924,
    "best": 594,
    "turtle_wins": 39,
    "misscon": 8,
-   "last_seen": "2026-09-01",
+   "last_seen": "2026-09-08",
    "fastest": 215,
    "round_wins": {
     "Current Events": 4,
@@ -113059,18 +113697,18 @@
   },
   {
    "team": "No Sports Please",
-   "games": 220,
+   "games": 222,
    "wins": 23,
-   "points": 110070,
+   "points": 111012,
    "best": 606,
    "turtle_wins": 35,
    "misscon": 7,
-   "last_seen": "2026-09-01",
-   "fastest": 443,
+   "last_seen": "2026-09-15",
+   "fastest": 449,
    "round_wins": {
     "Current Events": 22,
     "Wildcard": 28,
-    "General Knowledge": 21,
+    "General Knowledge": 22,
     "Name That Tune": 13,
     "Wildcard 2": 5
    },
@@ -113139,17 +113777,17 @@
   },
   {
    "team": "Ride Sally's Ride",
-   "games": 168,
-   "wins": 29,
-   "points": 87984,
+   "games": 170,
+   "wins": 30,
+   "points": 89098,
    "best": 584,
    "turtle_wins": 28,
    "misscon": 4,
-   "last_seen": "2026-09-01",
-   "fastest": 274,
+   "last_seen": "2026-09-15",
+   "fastest": 281,
    "round_wins": {
-    "Current Events": 30,
-    "Wildcard": 12,
+    "Current Events": 31,
+    "Wildcard": 13,
     "General Knowledge": 21,
     "Name That Tune": 34,
     "Wildcard 2": 4
@@ -113164,18 +113802,18 @@
   },
   {
    "team": "The Pizza Cats",
-   "games": 163,
+   "games": 164,
    "wins": 29,
-   "points": 85678,
+   "points": 86216,
    "best": 602,
    "turtle_wins": 22,
    "misscon": 14,
-   "last_seen": "2026-09-01",
-   "fastest": 546,
+   "last_seen": "2026-09-15",
+   "fastest": 549,
    "round_wins": {
     "General Knowledge": 39,
     "Wildcard": 31,
-    "Name That Tune": 17,
+    "Name That Tune": 18,
     "Current Events": 15,
     "Wildcard 2": 3,
     "Wildcard 4": 1
@@ -113257,6 +113895,7 @@
     "pizza cats spy ballo",
     "pizza cats still waiting to get plowed",
     "pizza cats waiting for the women's world cup tbh",
+    "pizza cats will give u 5000 bucks if u let us win",
     "pizza cats wish our fav dj a happy bday 2mrw",
     "pizza catsified docu",
     "pizza catsifixion",
@@ -113324,14 +113963,14 @@
   },
   {
    "team": "Rukas and Friends",
-   "games": 164,
+   "games": 166,
    "wins": 2,
-   "points": 76873,
+   "points": 77455,
    "best": 570,
-   "turtle_wins": 18,
+   "turtle_wins": 19,
    "misscon": 7,
-   "last_seen": "2026-08-18",
-   "fastest": 326,
+   "last_seen": "2026-09-15",
+   "fastest": 333,
    "round_wins": {
     "General Knowledge": 4,
     "Name That Tune": 11,
@@ -113374,14 +114013,14 @@
   },
   {
    "team": "Lexi girl head",
-   "games": 166,
+   "games": 167,
    "wins": 0,
-   "points": 70693,
+   "points": 70855,
    "best": 562,
    "turtle_wins": 29,
    "misscon": 10,
-   "last_seen": "2026-09-01",
-   "fastest": 125,
+   "last_seen": "2026-09-08",
+   "fastest": 126,
    "round_wins": {
     "Current Events": 3,
     "Wildcard 2": 1,
@@ -113396,14 +114035,14 @@
   },
   {
    "team": "The ehhhhh Crew",
-   "games": 134,
+   "games": 136,
    "wins": 17,
-   "points": 68524,
+   "points": 69190,
    "best": 604,
-   "turtle_wins": 17,
+   "turtle_wins": 18,
    "misscon": 4,
-   "last_seen": "2026-09-01",
-   "fastest": 368,
+   "last_seen": "2026-09-15",
+   "fastest": 371,
    "round_wins": {
     "Name That Tune": 20,
     "General Knowledge": 8,
@@ -113477,6 +114116,7 @@
     "ehhhhhhhhcru",
     "ehhhhhhhhh new year new pizza",
     "ehhhhhhhhh put it in",
+    "ehhhhhhhhh put it in the pizza",
     "ehhhhhhhhh put it in the sheetza",
     "ehhhhhhhhh put it in the snackwrap",
     "ehhhhhhhhh put it re",
@@ -113505,6 +114145,7 @@
     "ehhhhhhhhhhhhhh put it in the pizza",
     "ehhhhhhhhhhhhhh put it in the wet ass pizza",
     "ehhhhhhhhhhhhhhhh peeeeeza",
+    "ehhhhhhhhhhhhhhhh put it in the pizza",
     "ehhhhhhhhhhhhhhhh put it in the twin peaksa",
     "ehhhhhhhhhhhhhhhhh it's",
     "ehhhhhhhhhhhhhhhhh put it in the krusty krab pizza",
@@ -113525,17 +114166,17 @@
   },
   {
    "team": "Tom's 'Stache",
-   "games": 120,
+   "games": 122,
    "wins": 5,
-   "points": 58552,
+   "points": 59566,
    "best": 574,
-   "turtle_wins": 22,
+   "turtle_wins": 23,
    "misscon": 6,
-   "last_seen": "2026-09-01",
-   "fastest": 247,
+   "last_seen": "2026-09-15",
+   "fastest": 255,
    "round_wins": {
     "General Knowledge": 6,
-    "Name That Tune": 7,
+    "Name That Tune": 8,
     "Current Events": 9,
     "Wildcard": 7
    },
@@ -113544,6 +114185,7 @@
     "bill clintom's trumpstache ride",
     "birthtom's 40th stacheday",
     "cinco de tomstache",
+    "counting or not counting tom's mustache",
     "it's beginning to look a lot like tom's mustache",
     "it's giving tom's mustache",
     "luigi's manifestom's mustache",
@@ -113595,6 +114237,7 @@
     "tom's mustache",
     "tom's mustache 4 mayor",
     "tom's mustache 4 prez",
+    "tom's mustache has dropped out of ed sheerans tour",
     "tom's mustache hates AI 'art'",
     "tom's mustache misses dolly",
     "tom's nothing ever happens mustache",
@@ -113637,14 +114280,14 @@
   },
   {
    "team": "My Drinking Team Has a Trivia Problem",
-   "games": 110,
+   "games": 112,
    "wins": 11,
-   "points": 55588,
+   "points": 56634,
    "best": 588,
    "turtle_wins": 23,
    "misscon": 4,
-   "last_seen": "2026-08-25",
-   "fastest": 80,
+   "last_seen": "2026-09-15",
+   "fastest": 83,
    "round_wins": {
     "Wildcard": 7,
     "Current Events": 11,
@@ -113665,13 +114308,13 @@
   },
   {
    "team": "Rhonda Santis",
-   "games": 110,
+   "games": 111,
    "wins": 4,
-   "points": 48062,
+   "points": 48282,
    "best": 578,
    "turtle_wins": 16,
    "misscon": 3,
-   "last_seen": "2026-09-01",
+   "last_seen": "2026-09-15",
    "fastest": 140,
    "round_wins": {
     "Name That Tune": 5,
@@ -113856,14 +114499,14 @@
   },
   {
    "team": "Flaw Peacock",
-   "games": 61,
+   "games": 62,
    "wins": 0,
-   "points": 26291,
+   "points": 26773,
    "best": 570,
    "turtle_wins": 6,
    "misscon": 2,
-   "last_seen": "2026-08-18",
-   "fastest": 125,
+   "last_seen": "2026-09-15",
+   "fastest": 126,
    "round_wins": {
     "Wildcard": 2,
     "Current Events": 1,
@@ -113988,18 +114631,38 @@
   },
   {
    "team": "Serving Fish",
-   "games": 45,
+   "games": 46,
    "wins": 0,
-   "points": 19702,
+   "points": 20136,
    "best": 530,
    "turtle_wins": 11,
    "misscon": 0,
-   "last_seen": "2026-09-01",
-   "fastest": 55,
+   "last_seen": "2026-09-08",
+   "fastest": 57,
    "round_wins": {
     "General Knowledge": 1
    },
    "aka": []
+  },
+  {
+   "team": "Quiz Me Daddy",
+   "games": 43,
+   "wins": 0,
+   "points": 18835,
+   "best": 566,
+   "turtle_wins": 8,
+   "misscon": 1,
+   "last_seen": "2026-09-15",
+   "fastest": 154,
+   "round_wins": {
+    "Wildcard": 1,
+    "Current Events": 2,
+    "Wildcard 2": 1,
+    "General Knowledge": 1
+   },
+   "aka": [
+    "Quiz me Daddy"
+   ]
   },
   {
    "team": "Ass and Titties Ass",
@@ -114041,26 +114704,6 @@
    },
    "aka": [
     "BottomsCantBeTops"
-   ]
-  },
-  {
-   "team": "Quiz Me Daddy",
-   "games": 41,
-   "wins": 0,
-   "points": 17961,
-   "best": 566,
-   "turtle_wins": 8,
-   "misscon": 1,
-   "last_seen": "2026-08-18",
-   "fastest": 142,
-   "round_wins": {
-    "Wildcard": 1,
-    "Current Events": 2,
-    "Wildcard 2": 1,
-    "General Knowledge": 1
-   },
-   "aka": [
-    "Quiz me Daddy"
    ]
   },
   {
@@ -114164,13 +114807,13 @@
   },
   {
    "team": "Twihards",
-   "games": 36,
+   "games": 37,
    "wins": 0,
-   "points": 15004,
+   "points": 15434,
    "best": 554,
    "turtle_wins": 6,
    "misscon": 0,
-   "last_seen": "2026-09-01",
+   "last_seen": "2026-09-08",
    "fastest": 31,
    "round_wins": {
     "General Knowledge": 2,
@@ -114184,13 +114827,13 @@
   },
   {
    "team": "hot tamales",
-   "games": 55,
+   "games": 56,
    "wins": 0,
-   "points": 14294,
+   "points": 14444,
    "best": 422,
    "turtle_wins": 6,
    "misscon": 0,
-   "last_seen": "2026-09-01",
+   "last_seen": "2026-09-08",
    "fastest": 51,
    "round_wins": {
     "Current Events": 1,
@@ -114219,6 +114862,28 @@
    ]
   },
   {
+   "team": "Gum Cutters",
+   "games": 68,
+   "wins": 0,
+   "points": 13856,
+   "best": 440,
+   "turtle_wins": 5,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 56,
+   "round_wins": {},
+   "aka": [
+    "40 gum cutters stuck in tom's mustache",
+    "Glum Cutters",
+    "Gum Cutters on the roof",
+    "gum cutters",
+    "gum cutters for dolly",
+    "gum cutters for ems' birthday",
+    "pumpkin spice gum cutters",
+    "state of the gum cutters"
+   ]
+  },
+  {
    "team": "whiskey and wellbutrin",
    "games": 33,
    "wins": 0,
@@ -114234,27 +114899,6 @@
    "aka": [
     "Whiskey and Wellbutrin",
     "whiskey and wellbutr"
-   ]
-  },
-  {
-   "team": "Gum Cutters",
-   "games": 66,
-   "wins": 0,
-   "points": 13460,
-   "best": 440,
-   "turtle_wins": 5,
-   "misscon": 0,
-   "last_seen": "2026-09-01",
-   "fastest": 53,
-   "round_wins": {},
-   "aka": [
-    "40 gum cutters stuck in tom's mustache",
-    "Glum Cutters",
-    "Gum Cutters on the roof",
-    "gum cutters",
-    "gum cutters for dolly",
-    "pumpkin spice gum cutters",
-    "state of the gum cutters"
    ]
   },
   {
@@ -114944,6 +115588,24 @@
    ]
   },
   {
+   "team": "Multiple Scoregasms",
+   "games": 15,
+   "wins": 0,
+   "points": 6742,
+   "best": 522,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 16,
+   "round_wins": {
+    "Wildcard": 1,
+    "General Knowledge": 1
+   },
+   "aka": [
+    "Multiple Scorgasms"
+   ]
+  },
+  {
    "team": "Upstairs at Luckys",
    "games": 14,
    "wins": 0,
@@ -114972,21 +115634,21 @@
    "aka": []
   },
   {
-   "team": "Multiple Scoregasms",
-   "games": 14,
+   "team": "Serving Cunt Missing Answers",
+   "games": 19,
    "wins": 0,
-   "points": 6316,
-   "best": 522,
-   "turtle_wins": 1,
+   "points": 6566,
+   "best": 438,
+   "turtle_wins": 2,
    "misscon": 0,
-   "last_seen": "2026-08-18",
-   "fastest": 13,
-   "round_wins": {
-    "Wildcard": 1,
-    "General Knowledge": 1
-   },
+   "last_seen": "2026-09-08",
+   "fastest": 23,
+   "round_wins": {},
    "aka": [
-    "Multiple Scorgasms"
+    "Serving Cunt Since 40",
+    "Serving cunt missing answers",
+    "serving cunt missing answers",
+    "serving cuntry"
    ]
   },
   {
@@ -115003,24 +115665,6 @@
     "Current Events": 1
    },
    "aka": []
-  },
-  {
-   "team": "Serving Cunt Missing Answers",
-   "games": 18,
-   "wins": 0,
-   "points": 6166,
-   "best": 438,
-   "turtle_wins": 2,
-   "misscon": 0,
-   "last_seen": "2026-08-11",
-   "fastest": 18,
-   "round_wins": {},
-   "aka": [
-    "Serving Cunt Since 40",
-    "Serving cunt missing answers",
-    "serving cunt missing answers",
-    "serving cuntry"
-   ]
   },
   {
    "team": "sports bras and doing it raw",
@@ -115193,6 +115837,23 @@
    "aka": []
   },
   {
+   "team": "Cherry Panda Paws",
+   "games": 11,
+   "wins": 2,
+   "points": 4879,
+   "best": 560,
+   "turtle_wins": 3,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 57,
+   "round_wins": {
+    "Name That Tune": 1,
+    "Wildcard": 1,
+    "Wildcard 2": 1
+   },
+   "aka": []
+  },
+  {
    "team": "Lexi's Ecru Nipples",
    "games": 18,
    "wins": 0,
@@ -115242,23 +115903,6 @@
    ]
   },
   {
-   "team": "Cherry Panda Paws",
-   "games": 10,
-   "wins": 2,
-   "points": 4663,
-   "best": 560,
-   "turtle_wins": 3,
-   "misscon": 0,
-   "last_seen": "2026-09-01",
-   "fastest": 54,
-   "round_wins": {
-    "Name That Tune": 1,
-    "Wildcard": 1,
-    "Wildcard 2": 1
-   },
-   "aka": []
-  },
-  {
    "team": "Crystal Queer",
    "games": 14,
    "wins": 0,
@@ -115304,6 +115948,24 @@
    },
    "aka": [
     "Lawrence of a labia"
+   ]
+  },
+  {
+   "team": "Caulk Destroyers",
+   "games": 11,
+   "wins": 0,
+   "points": 4594,
+   "best": 512,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 17,
+   "round_wins": {
+    "General Knowledge": 1,
+    "Wildcard": 1
+   },
+   "aka": [
+    "caulkdestroyers"
    ]
   },
   {
@@ -115394,24 +116056,6 @@
    },
    "aka": [
     "Post Grape Nut Clari"
-   ]
-  },
-  {
-   "team": "Caulk Destroyers",
-   "games": 10,
-   "wins": 0,
-   "points": 4220,
-   "best": 512,
-   "turtle_wins": 1,
-   "misscon": 0,
-   "last_seen": "2026-02-10",
-   "fastest": 15,
-   "round_wins": {
-    "General Knowledge": 1,
-    "Wildcard": 1
-   },
-   "aka": [
-    "caulkdestroyers"
    ]
   },
   {
@@ -115656,6 +116300,19 @@
    ]
   },
   {
+   "team": "voodoo clams",
+   "games": 11,
+   "wins": 0,
+   "points": 3774,
+   "best": 432,
+   "turtle_wins": 3,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 18,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "All You Can Eat",
    "games": 11,
    "wins": 0,
@@ -115875,19 +116532,6 @@
     "3 Hats and a Bi",
     "3 Hats and a Bi - de"
    ]
-  },
-  {
-   "team": "voodoo clams",
-   "games": 10,
-   "wins": 0,
-   "points": 3422,
-   "best": 432,
-   "turtle_wins": 3,
-   "misscon": 0,
-   "last_seen": "2026-09-01",
-   "fastest": 12,
-   "round_wins": {},
-   "aka": []
   },
   {
    "team": "Platonic Fisting",
@@ -116190,6 +116834,21 @@
    "aka": [
     "Holden Coxs"
    ]
+  },
+  {
+   "team": "yea cream on it",
+   "games": 6,
+   "wins": 0,
+   "points": 2818,
+   "best": 502,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 24,
+   "round_wins": {
+    "Wildcard": 1
+   },
+   "aka": []
   },
   {
    "team": "Derpalicious",
@@ -117495,21 +118154,6 @@
    ]
   },
   {
-   "team": "yea cream on it",
-   "games": 4,
-   "wins": 0,
-   "points": 1878,
-   "best": 502,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2026-08-25",
-   "fastest": 19,
-   "round_wins": {
-    "Wildcard": 1
-   },
-   "aka": []
-  },
-  {
    "team": "Hungary for Poussey",
    "games": 5,
    "wins": 0,
@@ -117689,6 +118333,19 @@
    "aka": [
     "Tres amigos"
    ]
+  },
+  {
+   "team": "Furby's Revenge",
+   "games": 4,
+   "wins": 0,
+   "points": 1778,
+   "best": 462,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 9,
+   "round_wins": {},
+   "aka": []
   },
   {
    "team": "otter poppers",
@@ -118756,19 +119413,6 @@
    "aka": []
   },
   {
-   "team": "Furby's Revenge",
-   "games": 3,
-   "wins": 0,
-   "points": 1316,
-   "best": 462,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2026-04-21",
-   "fastest": 8,
-   "round_wins": {},
-   "aka": []
-  },
-  {
    "team": "shrimp is bugs",
    "games": 3,
    "wins": 0,
@@ -119127,6 +119771,19 @@
    "aka": []
   },
   {
+   "team": "Catherine McCunty",
+   "games": 3,
+   "wins": 0,
+   "points": 1220,
+   "best": 448,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 10,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "10 Plagues of Phil",
    "games": 3,
    "wins": 0,
@@ -119316,6 +119973,21 @@
    "fastest": 11,
    "round_wins": {},
    "aka": []
+  },
+  {
+   "team": "Wolf Birds",
+   "games": 3,
+   "wins": 0,
+   "points": 1182,
+   "best": 450,
+   "turtle_wins": 1,
+   "misscon": 1,
+   "last_seen": "2026-09-15",
+   "fastest": 1,
+   "round_wins": {},
+   "aka": [
+    "Wolf birds"
+   ]
   },
   {
    "team": "4 non blondes",
@@ -120057,6 +120729,21 @@
    "last_seen": "2024-06-25",
    "fastest": 4,
    "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "LilstickyLadyFingers",
+   "games": 2,
+   "wins": 0,
+   "points": 1006,
+   "best": 514,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 3,
+   "round_wins": {
+    "Current Events": 1
+   },
    "aka": []
   },
   {
@@ -121066,6 +121753,21 @@
    ]
   },
   {
+   "team": "Russian Dolla",
+   "games": 2,
+   "wins": 0,
+   "points": 882,
+   "best": 472,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 1,
+   "round_wins": {},
+   "aka": [
+    "Russian Dolls"
+   ]
+  },
+  {
    "team": "FruitCakez",
    "games": 2,
    "wins": 0,
@@ -122022,19 +122724,6 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2025-02-11",
-   "fastest": 4,
-   "round_wins": {},
-   "aka": []
-  },
-  {
-   "team": "Catherine McCunty",
-   "games": 2,
-   "wins": 0,
-   "points": 818,
-   "best": 448,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2026-09-01",
    "fastest": 4,
    "round_wins": {},
    "aka": []
@@ -125363,6 +126052,19 @@
    "aka": []
   },
   {
+   "team": "The Inner Machinations of my mind are an enigma",
+   "games": 1,
+   "wins": 0,
+   "points": 542,
+   "best": 542,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 2,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "pizza kittens UwU",
    "games": 1,
    "wins": 1,
@@ -126985,6 +127687,21 @@
    "misscon": 0,
    "last_seen": "2026-02-03",
    "fastest": 3,
+   "round_wins": {
+    "Wildcard": 1
+   },
+   "aka": []
+  },
+  {
+   "team": "meowCATor projection? i hardly know 'er projection",
+   "games": 1,
+   "wins": 0,
+   "points": 518,
+   "best": 518,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 4,
    "round_wins": {
     "Wildcard": 1
    },
@@ -129932,6 +130649,19 @@
    "aka": []
   },
   {
+   "team": "Toms Deus Ex Machina of Pickled Enigmas",
+   "games": 1,
+   "wins": 0,
+   "points": 488,
+   "best": 488,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 4,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "lez be honest",
    "games": 1,
    "wins": 0,
@@ -132378,6 +133108,19 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2025-05-20",
+   "fastest": 4,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "SQUASH ME",
+   "games": 1,
+   "wins": 0,
+   "points": 468,
+   "best": 468,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
    "fastest": 4,
    "round_wins": {},
    "aka": []
@@ -135664,6 +136407,19 @@
    "turtle_wins": 0,
    "misscon": 1,
    "last_seen": "2026-06-02",
+   "fastest": 3,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "girls who fart",
+   "games": 1,
+   "wins": 0,
+   "points": 448,
+   "best": 448,
+   "turtle_wins": 0,
+   "misscon": 1,
+   "last_seen": "2026-09-15",
    "fastest": 3,
    "round_wins": {},
    "aka": []
@@ -141114,6 +141870,32 @@
    "aka": []
   },
   {
+   "team": "Jack Mehoff",
+   "games": 1,
+   "wins": 0,
+   "points": 420,
+   "best": 420,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 0,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "Spartans",
+   "games": 1,
+   "wins": 0,
+   "points": 420,
+   "best": 420,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
+   "fastest": 0,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "I'm a Keeper",
    "games": 1,
    "wins": 0,
@@ -141743,6 +142525,19 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2026-08-18",
+   "fastest": 2,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "Soup",
+   "games": 1,
+   "wins": 0,
+   "points": 414,
+   "best": 414,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
    "fastest": 2,
    "round_wins": {},
    "aka": []
@@ -142777,7 +143572,7 @@
    "aka": []
   },
   {
-   "team": "Russian Dolls",
+   "team": "full bush for dolly",
    "games": 1,
    "wins": 0,
    "points": 410,
@@ -142790,14 +143585,14 @@
    "aka": []
   },
   {
-   "team": "full bush for dolly",
+   "team": "The Greek Table",
    "games": 1,
    "wins": 0,
    "points": 410,
    "best": 410,
-   "turtle_wins": 0,
+   "turtle_wins": 1,
    "misscon": 0,
-   "last_seen": "2026-08-25",
+   "last_seen": "2026-09-15",
    "fastest": 0,
    "round_wins": {},
    "aka": []
@@ -147024,19 +147819,6 @@
    "aka": []
   },
   {
-   "team": "Wolf birds",
-   "games": 1,
-   "wins": 0,
-   "points": 382,
-   "best": 382,
-   "turtle_wins": 0,
-   "misscon": 1,
-   "last_seen": "2026-09-01",
-   "fastest": 1,
-   "round_wins": {},
-   "aka": []
-  },
-  {
    "team": "peetah da horse is here",
    "games": 1,
    "wins": 0,
@@ -150476,6 +151258,19 @@
    "aka": []
   },
   {
+   "team": "ur bitch aunt jennifer",
+   "games": 1,
+   "wins": 0,
+   "points": 358,
+   "best": 358,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
+   "fastest": 4,
+   "round_wins": {},
+   "aka": []
+  },
+  {
    "team": "The Brian King",
    "games": 1,
    "wins": 0,
@@ -152351,6 +153146,19 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2026-07-21",
+   "fastest": 1,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "Smartest Girls in School",
+   "games": 1,
+   "wins": 0,
+   "points": 342,
+   "best": 342,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
    "fastest": 1,
    "round_wins": {},
    "aka": []
@@ -155845,6 +156653,19 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2026-07-07",
+   "fastest": 1,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "gabby pentin",
+   "games": 1,
+   "wins": 0,
+   "points": 312,
+   "best": 312,
+   "turtle_wins": 1,
+   "misscon": 0,
+   "last_seen": "2026-09-08",
    "fastest": 1,
    "round_wins": {},
    "aka": []
@@ -168856,6 +169677,19 @@
    "turtle_wins": 0,
    "misscon": 0,
    "last_seen": "2026-05-26",
+   "fastest": 0,
+   "round_wins": {},
+   "aka": []
+  },
+  {
+   "team": "RAW",
+   "games": 1,
+   "wins": 0,
+   "points": 60,
+   "best": 60,
+   "turtle_wins": 0,
+   "misscon": 0,
+   "last_seen": "2026-09-15",
    "fastest": 0,
    "round_wins": {},
    "aka": []
@@ -202352,8 +203186,8 @@
  "turtle_tally": {
   "1": 54,
   "2": 45,
-  "3": 65,
-  "4": 55,
+  "3": 66,
+  "4": 56,
   "5": 40,
   "6": 49
  },
@@ -202362,8 +203196,8 @@
   "avg_teams": 32.9,
   "avg_difficulty": 71,
   "free_q_overall": {
-   "correct": 2759,
-   "answered": 3281,
+   "correct": 2775,
+   "answered": 3302,
    "pct": 84
   },
   "top_scores": [
@@ -202461,8 +203295,8 @@
    },
    {
     "label": "September",
-    "avg": 31.1,
-    "nights": 28
+    "avg": 30.9,
+    "nights": 30
    },
    {
     "label": "October",
@@ -202498,8 +203332,8 @@
    },
    {
     "label": "Fall",
-    "avg": 31.8,
-    "nights": 86
+    "avg": 31.7,
+    "nights": 88
    }
   ],
   "attendance_by_nth_tuesday": [
@@ -202510,13 +203344,13 @@
    },
    {
     "label": "2nd",
-    "avg": 33.5,
-    "nights": 80
+    "avg": 33.4,
+    "nights": 81
    },
    {
     "label": "3rd",
-    "avg": 32.9,
-    "nights": 78
+    "avg": 32.8,
+    "nights": 79
    },
    {
     "label": "4th",
@@ -202660,10 +203494,10 @@
     "to": "2026-06-30"
    },
    {
-    "team": "Hugh G Rection",
+    "team": "Gayzed and Confused",
     "len": 2,
-    "from": "2019-07-30",
-    "to": "2019-08-06"
+    "from": "2019-04-09",
+    "to": "2019-04-23"
    }
   ],
   "attendance_streaks": [
@@ -202687,9 +203521,9 @@
    },
    {
     "team": "Tom's 'Stache",
-    "len": 47,
+    "len": 49,
     "from": "2025-09-23",
-    "to": "2026-09-01"
+    "to": "2026-09-15"
    },
    {
     "team": "BOGO",
@@ -202731,11 +203565,11 @@
   "top10_finishes": [
    {
     "team": "Cummin In Hawt",
-    "count": 299
+    "count": 301
    },
    {
     "team": "BOGO",
-    "count": 190
+    "count": 191
    },
    {
     "team": "Carol Channing",
@@ -202743,27 +203577,27 @@
    },
    {
     "team": "Ride Sally's Ride",
-    "count": 158
+    "count": 160
    },
    {
     "team": "No Sports Please",
-    "count": 155
+    "count": 156
    },
    {
     "team": "The Pizza Cats",
-    "count": 139
+    "count": 140
    },
    {
     "team": "The ehhhhh Crew",
-    "count": 106
+    "count": 107
    },
    {
     "team": "My Drinking Team Has a Trivia Problem",
-    "count": 75
+    "count": 77
    },
    {
     "team": "Tom's 'Stache",
-    "count": 74
+    "count": 76
    },
    {
     "team": "Rukas and Friends",
@@ -202773,56 +203607,56 @@
   "current_streaks": [
    {
     "team": "Tom's 'Stache",
-    "len": 47,
+    "len": 49,
     "since": "2025-09-23"
    },
    {
     "team": "Cummin In Hawt",
-    "len": 19,
+    "len": 21,
     "since": "2026-04-21"
    },
    {
-    "team": "The Pizza Cats",
-    "len": 16,
-    "since": "2026-05-12"
-   },
-   {
-    "team": "BOGO",
-    "len": 11,
-    "since": "2026-06-23"
-   },
-   {
     "team": "No Sports Please",
-    "len": 8,
+    "len": 10,
     "since": "2026-07-14"
    },
    {
-    "team": "Lexi girl head",
-    "len": 6,
-    "since": "2026-07-28"
-   },
-   {
-    "team": "JonBen\u00e9t Rimsey",
-    "len": 6,
-    "since": "2026-07-28"
-   },
-   {
-    "team": "Fortnite Gamer Girls",
-    "len": 6,
-    "since": "2026-07-28"
-   },
-   {
-    "team": "Lil Poundcake Farts",
-    "len": 6,
-    "since": "2026-07-28"
-   },
-   {
-    "team": "Serving Fish",
+    "team": "Gum Cutters",
     "len": 4,
-    "since": "2026-08-11"
+    "since": "2026-08-25"
+   },
+   {
+    "team": "Ride Sally's Ride",
+    "len": 3,
+    "since": "2026-09-01"
+   },
+   {
+    "team": "The ehhhhh Crew",
+    "len": 3,
+    "since": "2026-09-01"
+   },
+   {
+    "team": "Wolf Birds",
+    "len": 3,
+    "since": "2026-09-01"
+   },
+   {
+    "team": "hi my name is Tom and Im an alcoholic",
+    "len": 3,
+    "since": "2026-09-01"
+   },
+   {
+    "team": "yea cream on it",
+    "len": 2,
+    "since": "2026-09-08"
+   },
+   {
+    "team": "My Drinking Team Has a Trivia Problem",
+    "len": 2,
+    "since": "2026-09-08"
    }
   ],
-  "latest_night": "2026-09-01",
+  "latest_night": "2026-09-15",
   "second_finishes": [
    {
     "team": "Cummin In Hawt",
@@ -202850,7 +203684,7 @@
    },
    {
     "team": "BOGO",
-    "count": 15
+    "count": 16
    },
    {
     "team": "Ass and Titties Ass",
@@ -202868,11 +203702,11 @@
   "third_finishes": [
    {
     "team": "Cummin In Hawt",
-    "count": 39
+    "count": 40
    },
    {
     "team": "Ride Sally's Ride",
-    "count": 24
+    "count": 25
    },
    {
     "team": "The Pizza Cats",
@@ -202919,11 +203753,11 @@
     },
     {
      "team": "BOGO",
-     "count": 26
+     "count": 27
     },
     {
      "team": "No Sports Please",
-     "count": 21
+     "count": 22
     },
     {
      "team": "Ride Sally's Ride",
@@ -202953,7 +203787,7 @@
    "Name That Tune": [
     {
      "team": "Cummin In Hawt",
-     "count": 68
+     "count": 69
     },
     {
      "team": "Ride Sally's Ride",
@@ -202965,7 +203799,7 @@
     },
     {
      "team": "The Pizza Cats",
-     "count": 17
+     "count": 18
     },
     {
      "team": "No Sports Please",
@@ -202999,7 +203833,7 @@
     },
     {
      "team": "Ride Sally's Ride",
-     "count": 30
+     "count": 31
     },
     {
      "team": "No Sports Please",
@@ -203061,7 +203895,7 @@
     },
     {
      "team": "Ride Sally's Ride",
-     "count": 12
+     "count": 13
     },
     {
      "team": "Would U Like a Mustache Ride",
@@ -203080,11 +203914,11 @@
   "fastest_fingers": [
    {
     "team": "Cummin In Hawt",
-    "count": 824
+    "count": 827
    },
    {
     "team": "The Pizza Cats",
-    "count": 546
+    "count": 549
    },
    {
     "team": "Lil Poundcake Farts",
@@ -203092,31 +203926,31 @@
    },
    {
     "team": "No Sports Please",
-    "count": 443
+    "count": 449
    },
    {
     "team": "hi my name is Tom and Im an alcoholic",
-    "count": 414
+    "count": 415
    },
    {
     "team": "The ehhhhh Crew",
-    "count": 368
+    "count": 371
    },
    {
     "team": "Rukas and Friends",
-    "count": 326
+    "count": 333
    },
    {
     "team": "Ride Sally's Ride",
-    "count": 274
+    "count": 281
    },
    {
     "team": "Tom's 'Stache",
-    "count": 247
+    "count": 255
    },
    {
     "team": "BOGO",
-    "count": 239
+    "count": 241
    }
   ]
  }

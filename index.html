@@ -925,6 +925,7 @@ function renderOverview() {
   v.appendChild(wrap);
 
   v.appendChild(el('h2', null, 'Record book'));
+  v.appendChild(el('p', 'sub', 'Tie a round, win the round \u2014 everyone tied for the top score gets credit. Same for a tied night: co-champions.'));
   const R = DATA.records || {};
   const rb = el('div', 'cards3');
   const spanTxt = r => shortDate(r.from) + ' → ' + shortDate(r.to);
