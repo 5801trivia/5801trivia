@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29 20:54 UTC",
+ "generated": "2026-09-29 21:38 UTC",
  "venue": "5801 Video Lounge & Cafe, Pittsburgh",
  "nights": [
   {
@@ -114367,44 +114367,22 @@
    ]
   },
   {
-   "team": "Lexi girl head",
-   "games": 167,
-   "wins": 0,
-   "points": 70855,
-   "best": 562,
-   "turtle_wins": 29,
-   "misscon": 10,
-   "last_seen": "2026-09-08",
-   "fastest": 126,
-   "round_wins": {
-    "Current Events": 3,
-    "Wildcard 2": 1,
-    "Wildcard": 2,
-    "General Knowledge": 1,
-    "Name That Tune": 2
-   },
-   "aka": [
-    "Lexi girl head 40",
-    "lexi girl head"
-   ]
-  },
-  {
    "team": "The ehhhhh Crew",
-   "games": 136,
-   "wins": 17,
-   "points": 69190,
+   "games": 140,
+   "wins": 18,
+   "points": 71360,
    "best": 604,
-   "turtle_wins": 18,
+   "turtle_wins": 19,
    "misscon": 4,
-   "last_seen": "2026-09-15",
-   "fastest": 371,
+   "last_seen": "2026-09-22",
+   "fastest": 382,
    "round_wins": {
-    "Name That Tune": 20,
-    "General Knowledge": 8,
-    "Wildcard": 18,
+    "Name That Tune": 21,
+    "General Knowledge": 9,
+    "Wildcard": 19,
     "Wildcard 2": 2,
     "Wildcard 3": 2,
-    "Current Events": 9
+    "Current Events": 10
    },
    "aka": [
     "Ehhh I'm Gonna Steal",
@@ -114416,6 +114394,9 @@
     "Ehhh Put It In the P",
     "Ehhh Tear Up the Pop",
     "Ehhh kill the lanter",
+    "eh",
+    "eh put it in theblea",
+    "eh put the radioactive walmart shrimp on the pizza",
     "ehh did u no thers a painting of tom on ellsworth",
     "ehh put it in the mini pizza",
     "ehh put it in the non demicurious semibinary pizza",
@@ -114516,7 +114497,30 @@
     "ehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh put it in tha",
     "ehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
     "ehhhhreola borealis",
-    "the ehhhhhhhhhhh crew"
+    "the ehhhhhhhhhhh crew",
+    "\u00e9h\u00e8h\u00e9h\u00e8h\u00e8! \u00e1\u00e7\u00e7\u00e8\u00f1t\u00fa\u00e1t\u00e9 th\u00e9 p\u00ec\u00ed\u00ec\u00edzz\u00e1!!!"
+   ]
+  },
+  {
+   "team": "Lexi girl head",
+   "games": 167,
+   "wins": 0,
+   "points": 70855,
+   "best": 562,
+   "turtle_wins": 29,
+   "misscon": 10,
+   "last_seen": "2026-09-08",
+   "fastest": 126,
+   "round_wins": {
+    "Current Events": 3,
+    "Wildcard 2": 1,
+    "Wildcard": 2,
+    "General Knowledge": 1,
+    "Name That Tune": 2
+   },
+   "aka": [
+    "Lexi girl head 40",
+    "lexi girl head"
    ]
   },
   {
@@ -116772,6 +116776,21 @@
    "aka": []
   },
   {
+   "team": "syracuties",
+   "games": 8,
+   "wins": 0,
+   "points": 3618,
+   "best": 522,
+   "turtle_wins": 2,
+   "misscon": 3,
+   "last_seen": "2026-09-22",
+   "fastest": 21,
+   "round_wins": {},
+   "aka": [
+    "syraBOOBies"
+   ]
+  },
+  {
    "team": "rural juror urban fe",
    "games": 8,
    "wins": 1,
@@ -116975,19 +116994,6 @@
    "round_wins": {
     "Wildcard": 2
    },
-   "aka": []
-  },
-  {
-   "team": "syracuties",
-   "games": 7,
-   "wins": 0,
-   "points": 3176,
-   "best": 522,
-   "turtle_wins": 2,
-   "misscon": 2,
-   "last_seen": "2026-08-25",
-   "fastest": 17,
-   "round_wins": {},
    "aka": []
   },
   {
@@ -125090,21 +125096,6 @@
    "aka": []
   },
   {
-   "team": "eh put it in theblea",
-   "games": 1,
-   "wins": 1,
-   "points": 584,
-   "best": 584,
-   "turtle_wins": 1,
-   "misscon": 0,
-   "last_seen": "2024-05-21",
-   "fastest": 0,
-   "round_wins": {
-    "General Knowledge": 1
-   },
-   "aka": []
-  },
-  {
    "team": "keep calmala and trivia onala",
    "games": 1,
    "wins": 1,
@@ -125159,21 +125150,6 @@
     "General Knowledge": 1,
     "Name That Tune": 1,
     "Current Events": 1
-   },
-   "aka": []
-  },
-  {
-   "team": "eh",
-   "games": 1,
-   "wins": 0,
-   "points": 582,
-   "best": 582,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2024-01-02",
-   "fastest": 4,
-   "round_wins": {
-    "Wildcard": 1
    },
    "aka": []
   },
@@ -127249,22 +127225,6 @@
    "last_seen": "2019-11-12",
    "fastest": 5,
    "round_wins": {},
-   "aka": []
-  },
-  {
-   "team": "eh put the radioactive walmart shrimp on the pizza",
-   "games": 1,
-   "wins": 0,
-   "points": 528,
-   "best": 528,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2025-08-19",
-   "fastest": 4,
-   "round_wins": {
-    "Name That Tune": 1,
-    "Current Events": 1
-   },
    "aka": []
   },
   {
@@ -132288,19 +132248,6 @@
     "Current Events": 1,
     "Wildcard": 1
    },
-   "aka": []
-  },
-  {
-   "team": "\u00e9h\u00e8h\u00e9h\u00e8h\u00e8! \u00e1\u00e7\u00e7\u00e8\u00f1t\u00fa\u00e1t\u00e9 th\u00e9 p\u00ec\u00ed\u00ec\u00edzz\u00e1!!!",
-   "games": 1,
-   "wins": 0,
-   "points": 476,
-   "best": 476,
-   "turtle_wins": 0,
-   "misscon": 0,
-   "last_seen": "2026-09-22",
-   "fastest": 3,
-   "round_wins": {},
    "aka": []
   },
   {
@@ -138065,19 +138012,6 @@
    "misscon": 0,
    "last_seen": "2026-08-25",
    "fastest": 6,
-   "round_wins": {},
-   "aka": []
-  },
-  {
-   "team": "syraBOOBies",
-   "games": 1,
-   "wins": 0,
-   "points": 442,
-   "best": 442,
-   "turtle_wins": 0,
-   "misscon": 1,
-   "last_seen": "2026-09-22",
-   "fastest": 4,
    "round_wins": {},
    "aka": []
   },
@@ -204100,7 +204034,7 @@
    },
    {
     "team": "The ehhhhh Crew",
-    "count": 107
+    "count": 111
    },
    {
     "team": "My Drinking Team Has a Trivia Problem",
@@ -204137,22 +204071,17 @@
     "since": "2026-09-01"
    },
    {
+    "team": "The ehhhhh Crew",
+    "len": 4,
+    "since": "2026-09-01"
+   },
+   {
     "team": "wolf birds",
     "len": 4,
     "since": "2026-09-01"
    },
    {
-    "team": "yea cream on it",
-    "len": 3,
-    "since": "2026-09-08"
-   },
-   {
     "team": "My Drinking Team Has a Trivia Problem",
-    "len": 3,
-    "since": "2026-09-08"
-   },
-   {
-    "team": "Rukas and Friends",
     "len": 3,
     "since": "2026-09-08"
    },
@@ -204162,9 +204091,14 @@
     "since": "2026-09-08"
    },
    {
-    "team": "BOGO",
-    "len": 2,
-    "since": "2026-09-15"
+    "team": "Rukas and Friends",
+    "len": 3,
+    "since": "2026-09-08"
+   },
+   {
+    "team": "yea cream on it",
+    "len": 3,
+    "since": "2026-09-08"
    }
   ],
   "latest_night": "2026-09-22",
@@ -204182,11 +204116,11 @@
     "count": 20
    },
    {
-    "team": "The Pizza Cats",
-    "count": 17
+    "team": "The ehhhhh Crew",
+    "count": 18
    },
    {
-    "team": "The ehhhhh Crew",
+    "team": "The Pizza Cats",
     "count": 17
    },
    {
@@ -204232,11 +204166,11 @@
     "count": 14
    },
    {
-    "team": "Carol Channing",
-    "count": 13
+    "team": "The ehhhhh Crew",
+    "count": 14
    },
    {
-    "team": "The ehhhhh Crew",
+    "team": "Carol Channing",
     "count": 13
    },
    {
@@ -204283,11 +204217,11 @@
      "count": 9
     },
     {
-     "team": "Carol Channing",
-     "count": 8
+     "team": "The ehhhhh Crew",
+     "count": 9
     },
     {
-     "team": "The ehhhhh Crew",
+     "team": "Carol Channing",
      "count": 8
     },
     {
@@ -204306,7 +204240,7 @@
     },
     {
      "team": "The ehhhhh Crew",
-     "count": 20
+     "count": 21
     },
     {
      "team": "The Pizza Cats",
@@ -204372,7 +204306,7 @@
     },
     {
      "team": "The ehhhhh Crew",
-     "count": 9
+     "count": 10
     },
     {
      "team": "Tom's 'Stache",
@@ -204398,7 +204332,7 @@
     },
     {
      "team": "The ehhhhh Crew",
-     "count": 18
+     "count": 19
     },
     {
      "team": "Carol Channing",
@@ -204445,7 +204379,7 @@
    },
    {
     "team": "The ehhhhh Crew",
-    "count": 371
+    "count": 382
    },
    {
     "team": "Rukas and Friends",
